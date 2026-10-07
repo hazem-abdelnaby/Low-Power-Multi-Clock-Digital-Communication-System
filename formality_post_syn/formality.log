@@ -1,0 +1,18 @@
+Info:  Net Imp:/WORK/ALU_DW_div_uns_0/remainder[7] is undriven.
+Info:  Net Imp:/WORK/ALU_DW_div_uns_0/remainder[6] is undriven.
+Info:  Net Imp:/WORK/ALU_DW_div_uns_0/remainder[5] is undriven.
+Info:  Net Imp:/WORK/ALU_DW_div_uns_0/remainder[4] is undriven.
+Info:  Net Imp:/WORK/ALU_DW_div_uns_0/remainder[3] is undriven.
+Info:  Net Imp:/WORK/ALU_DW_div_uns_0/remainder[2] is undriven.
+Info:  Net Imp:/WORK/ALU_DW_div_uns_0/remainder[1] is undriven.
+Info:  Net Imp:/WORK/ALU_DW_div_uns_0/remainder[0] is undriven.
+Info:  Net Imp:/WORK/ALU_DW_div_uns_0/divide_by_0 is undriven.
+Info:  Net Imp:/WORK/ALU_DW01_sub_0/CO is undriven.
+Info:  Net Imp:/WORK/ALU_DW01_add_0/CO is undriven.
+Info:  Net Imp:/WORK/ALU_DW01_add_1/CO is undriven.
+Info:  guide_uniquify 62 (Line: 489)  Cannot find object "Domain_2_TOP_U1/ClkDiv_U2_RX/U13" in design 'System_TOP'.
+Info:  SVF Operation 62 (Line: 489) - uniquify.  Status: rejected
+Info:  guide_uniquify 62 (Line: 489)  Cannot find object "Domain_2_TOP_U1/ClkDiv_U1_TX/U13" in design 'System_TOP'.
+Info:  guide_uniquify 70 (Line: 529)  Cannot find object "Domain_1_TOP_U0/ALU_U1/dp_cluster_0/mult_25" in design 'System_TOP'.
+Info:  Pre-verification of Ref:/WORK/ALU/div_26 SUCCEEDED.
+Info:  Pre-verification of Ref:/WORK/ALU/mult_25 SUCCEEDED.

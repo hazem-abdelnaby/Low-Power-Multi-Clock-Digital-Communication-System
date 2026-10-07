@@ -1,0 +1,156 @@
+#@ # 
+#@ # Running fm_shell Version L-2016.03-SP1 for linux64 -- Apr 13, 2016
+#@ # Date:   Wed Oct  7 00:46:54 2026
+#@ # Run by: ICer@IC_EDA
+#@ 
+
+source /home/synopsys/Formality2016/admin/setup/.synopsys_fm.setup
+#@ # -- Starting source /home/synopsys/Formality2016/admin/setup/.synopsys_fm.setup
+
+#@ #
+#@ # .synopsys_fm.setup: Initialization File for Formality
+#@ #
+#@ 
+#@ 
+#@ #
+#@ # Enable stack trace output on fatal.  Not available for all architectures.
+#@ #
+#@ if { $sh_arch == "sparc" || $sh_arch == "sparcOS5" ||      $sh_arch == "hp700" || $sh_arch == "hpux10" } {
+#@   set_unix_variable SYNOPSYS_TRACE ""
+#@ }
+#@ 
+#@ #
+#@ # Variable settings
+#@ #
+#@ set sh_new_variable_message true
+#@ 
+#@ #
+#@ # Synopsys strongly recommends that you uncomment the following command
+#@ # in order to set sh_command_abbrev_mode to the value "Command-Line-Only".
+#@ # Command abbreviation is intended as an interactive convenience.  Using
+#@ # abbreviations in scripts can cause commands to fail in subsequent releases.
+#@ # 
+#@ #set sh_command_abbrev_mode "Command-Line-Only"
+#@ 
+#@ #
+#@ # Some useful aliases
+#@ #
+#@ alias list_commands		help
+#@ 
+#@ #
+#@ # The alias of q to quit is commented out.  Remove the comment 
+#@ # character if you want this alias.  Some users find that having 
+#@ # this particular alias causes problems when mixed with page-mode
+#@ # for reports - an accidental repeated 'q' not only cancels the
+#@ # output but exits the tool.
+#@ #
+#@ #alias q quit
+#@ # -- End source /home/synopsys/Formality2016/admin/setup/.synopsys_fm.setup
+
+source -echo -verbose fm_script.tcl
+#@ # -- Starting source fm_script.tcl
+
+#@ ###############################################################################
+#@ ########################### Setup #############################################
+#@ ###############################################################################
+#@ 
+#@ set synopsys_auto_setup true
+#@ 
+#@ # SVF generated from Design Compiler
+#@ set_svf "/home/ICer/Project/System/syn/System_TOP.svf"
+#@ 
+#@ ###############################################################################
+#@ ################# Refrence container ##########################################
+#@ ###############################################################################
+#@ 
+#@ # Read RTL files
+#@ read_verilog -container Ref "/home/ICer/Project/System/rtl/ALU.v"
+#@ read_verilog -container Ref "/home/ICer/Project/System/rtl/ASYNC_FIFO.v"
+#@ read_verilog -container Ref "/home/ICer/Project/System/rtl/ClkDiv.v"
+#@ read_verilog -container Ref "/home/ICer/Project/System/rtl/Clock_Gating.v"
+#@ read_verilog -container Ref "/home/ICer/Project/System/rtl/data_sampling.v"
+#@ read_verilog -container Ref "/home/ICer/Project/System/rtl/DATA_SYNC.v"
+#@ read_verilog -container Ref "/home/ICer/Project/System/rtl/deserializer.v"
+#@ read_verilog -container Ref "/home/ICer/Project/System/rtl/DF_SYNC.v"
+#@ read_verilog -container Ref "/home/ICer/Project/System/rtl/Domain_1_TOP.v"
+#@ read_verilog -container Ref "/home/ICer/Project/System/rtl/Domain_2_TOP.v"
+#@ read_verilog -container Ref "/home/ICer/Project/System/rtl/edge_bit_counter.v"
+#@ read_verilog -container Ref "/home/ICer/Project/System/rtl/FIFO_MEM_CNTRL.v"
+#@ read_verilog -container Ref "/home/ICer/Project/System/rtl/FIFO_RD.v"
+#@ read_verilog -container Ref "/home/ICer/Project/System/rtl/FIFO_WR.v"
+#@ read_verilog -container Ref "/home/ICer/Project/System/rtl/FSM_RX.v"
+#@ read_verilog -container Ref "/home/ICer/Project/System/rtl/FSM_TX.v"
+#@ read_verilog -container Ref "/home/ICer/Project/System/rtl/MUX_TX.v"
+#@ read_verilog -container Ref "/home/ICer/Project/System/rtl/Parity_Calc_TX.v"
+#@ read_verilog -container Ref "/home/ICer/Project/System/rtl/Parity_Checker_RX.v"
+#@ read_verilog -container Ref "/home/ICer/Project/System/rtl/prescale_MUX.v"
+#@ read_verilog -container Ref "/home/ICer/Project/System/rtl/PULSE_GEN.v"
+#@ read_verilog -container Ref "/home/ICer/Project/System/rtl/RegFile.v"
+#@ read_verilog -container Ref "/home/ICer/Project/System/rtl/RST_SYNC.v"
+#@ read_verilog -container Ref "/home/ICer/Project/System/rtl/serializer_TX.v"
+#@ read_verilog -container Ref "/home/ICer/Project/System/rtl/Start_Checker.v"
+#@ read_verilog -container Ref "/home/ICer/Project/System/rtl/Stop_Checker_RX.v"
+#@ read_verilog -container Ref "/home/ICer/Project/System/rtl/System_TOP.v"
+#@ read_verilog -container Ref "/home/ICer/Project/System/rtl/SYS_CTRL.v"
+#@ read_verilog -container Ref "/home/ICer/Project/System/rtl/TOP_RX.v"
+#@ read_verilog -container Ref "/home/ICer/Project/System/rtl/TOP_TX.v"
+#@ read_verilog -container Ref "/home/ICer/Project/System/rtl/UART_TOP.v"
+#@ 
+#@ # Read std cells library
+#@ read_db -container Ref "/home/ICer/Project/System/std_cells/scmetro_tsmc_cl013g_rvt_tt_1p2v_25c.db"
+#@ 
+#@ # Set top design
+#@ set_top System_TOP
+#@ 
+#@ # Check loaded designs
+#@ report_designs
+#@ 
+#@ # Set reference design
+#@ set_reference_design System_TOP
+#@ 
+#@ ###############################################################################
+#@ ################# Implemintation container ####################################
+#@ ###############################################################################
+#@ 
+#@ # Read synthesized netlist
+#@ read_verilog -netlist -container Imp "/home/ICer/Project/System/syn/System_TOP_netlist.v"
+#@ 
+#@ # Read std cells library
+#@ read_db -container Imp "/home/ICer/Project/System/std_cells/scmetro_tsmc_cl013g_rvt_tt_1p2v_25c.db"
+#@ 
+#@ # Set top design
+#@ set_top System_TOP
+#@ 
+#@ # Check loaded designs
+#@ report_designs
+#@ 
+#@ # Set implementation design
+#@ set_implementation_design System_TOP
+#@ 
+#@ ###############################################################################
+#@ ############################ Matching #########################################
+#@ ###############################################################################
+#@ 
+#@ match
+#@ 
+#@ ###############################################################################
+#@ ######################### Run Verification ####################################
+#@ ###############################################################################
+#@ 
+#@ set successful [verify]
+#@ 
+#@ if {!$successful} {
+#@     diagnose
+#@     analyze_points -failing
+#@ }
+#@ 
+#@ ###############################################################################
+#@ ########################### Reporting #########################################
+#@ ###############################################################################
+#@ 
+#@ report_unmatched_points > "unmatched_points.rpt"
+#@ report_failing_points   > "failing_points.rpt"
+#@ report_passing_points   > "passing_points.rpt"
+#@ report_aborted_points   > "aborted_points.rpt"
+#@ 
+#@ exit
