@@ -136,32 +136,6 @@ The project includes a scan-based DFT implementation featuring:
 - Scan Reset
 - Test Mode Operation
 
----
-
-## Repository Structure
-
-```text
-RTL/
-├── ALU.v
-├── ASYNC_FIFO.v
-├── CLKDiv.v
-├── DATA_SYNC.v
-├── DF_SYNC.v
-├── RegFile.v
-├── SYS_CTRL.v
-├── UART_TOP.v
-├── System_TOP.v
-
-TB/
-├── System_TOP_tb.v
-
-CDC/
-DFT/
-Synthesis/
-STA/
-Formality/
-Docs/
-```
 
 ---
 
