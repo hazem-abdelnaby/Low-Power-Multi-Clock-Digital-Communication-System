@@ -1,0 +1,3214 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 100
+Design : System_TOP
+Version: O-2018.06-SP1
+Date   : Wed Oct  7 01:12:30 2026
+****************************************
+
+Operating Conditions: scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c   Library: scmetro_tsmc_cl013g_rvt_ff_1p32v_m40c
+Wire Load Model Mode: top
+
+  Startpoint: RST_SYNC_U3/stage_reg[1]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: RST_SYNC_U3/SYNC_RST_reg
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  RST_SYNC_U3/stage_reg[1]/CK (SDFFRQX2M)                 0.00       0.00 r
+  RST_SYNC_U3/stage_reg[1]/Q (SDFFRQX2M)                  0.35       0.35 r
+  RST_SYNC_U3/SYNC_RST_reg/D (SDFFRQX2M)                  0.00       0.35 r
+  data arrival time                                                  0.35
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  RST_SYNC_U3/SYNC_RST_reg/CK (SDFFRQX2M)                 0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.35
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.41
+
+
+  Startpoint: RST_SYNC_U3/stage_reg[0]/CK
+              (internal path startpoint clocked by scan_clk)
+  Endpoint: RST_SYNC_U3/stage_reg[1]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  RST_SYNC_U3/stage_reg[0]/CK (SDFFRQX2M)                 0.00       0.00 r
+  RST_SYNC_U3/stage_reg[0]/Q (SDFFRQX2M)                  0.35       0.35 r
+  RST_SYNC_U3/stage_reg[1]/D (SDFFRQX2M)                  0.00       0.35 r
+  data arrival time                                                  0.35
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  RST_SYNC_U3/stage_reg[1]/CK (SDFFRQX2M)                 0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.35
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.41
+
+
+  Startpoint: RST_SYNC_U4/stage_reg[1]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: RST_SYNC_U4/SYNC_RST_reg
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  RST_SYNC_U4/stage_reg[1]/CK (SDFFRQX2M)                 0.00       0.00 r
+  RST_SYNC_U4/stage_reg[1]/Q (SDFFRQX2M)                  0.35       0.35 r
+  RST_SYNC_U4/SYNC_RST_reg/D (SDFFRQX2M)                  0.00       0.35 r
+  data arrival time                                                  0.35
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  RST_SYNC_U4/SYNC_RST_reg/CK (SDFFRQX2M)                 0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.35
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.41
+
+
+  Startpoint: RST_SYNC_U4/stage_reg[0]/CK
+              (internal path startpoint clocked by scan_clk)
+  Endpoint: RST_SYNC_U4/stage_reg[1]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.00       0.00 r
+  RST_SYNC_U4/stage_reg[0]/CK (SDFFRQX2M)                 0.00       0.00 r
+  RST_SYNC_U4/stage_reg[0]/Q (SDFFRQX2M)                  0.35       0.35 r
+  RST_SYNC_U4/stage_reg[1]/D (SDFFRQX2M)                  0.00       0.35 r
+  data arrival time                                                  0.35
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  RST_SYNC_U4/stage_reg[1]/CK (SDFFRQX2M)                 0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.35
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.41
+
+
+  Startpoint: DATA_SYNC_U2/stage_reg[0]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: DATA_SYNC_U2/stage_reg[1]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  DATA_SYNC_U2/stage_reg[0]/CK (SDFFRQX2M)                0.00       0.00 r
+  DATA_SYNC_U2/stage_reg[0]/Q (SDFFRQX2M)                 0.35       0.35 r
+  DATA_SYNC_U2/stage_reg[1]/D (SDFFRQX2M)                 0.00       0.35 r
+  data arrival time                                                  0.35
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  DATA_SYNC_U2/stage_reg[1]/CK (SDFFRQX2M)                0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.35
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.42
+
+
+  Startpoint: ASYNC_FIFO_U5/U4/wptr_sync1_reg[3]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U4/wptr_sync_reg[3]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U4/wptr_sync1_reg[3]/CK (SDFFRQX2M)       0.00       0.00 r
+  ASYNC_FIFO_U5/U4/wptr_sync1_reg[3]/Q (SDFFRQX2M)        0.35       0.35 r
+  ASYNC_FIFO_U5/U4/wptr_sync_reg[3]/D (SDFFRQX2M)         0.00       0.35 r
+  data arrival time                                                  0.35
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U4/wptr_sync_reg[3]/CK (SDFFRQX2M)        0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.35
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.42
+
+
+  Startpoint: ASYNC_FIFO_U5/U4/wptr_sync1_reg[1]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U4/wptr_sync_reg[1]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U4/wptr_sync1_reg[1]/CK (SDFFRQX2M)       0.00       0.00 r
+  ASYNC_FIFO_U5/U4/wptr_sync1_reg[1]/Q (SDFFRQX2M)        0.35       0.35 r
+  ASYNC_FIFO_U5/U4/wptr_sync_reg[1]/D (SDFFRQX2M)         0.00       0.35 r
+  data arrival time                                                  0.35
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U4/wptr_sync_reg[1]/CK (SDFFRQX2M)        0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.35
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.42
+
+
+  Startpoint: ASYNC_FIFO_U5/U4/wptr_sync1_reg[0]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U4/wptr_sync_reg[0]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U4/wptr_sync1_reg[0]/CK (SDFFRQX2M)       0.00       0.00 r
+  ASYNC_FIFO_U5/U4/wptr_sync1_reg[0]/Q (SDFFRQX2M)        0.35       0.35 r
+  ASYNC_FIFO_U5/U4/wptr_sync_reg[0]/D (SDFFRQX2M)         0.00       0.35 r
+  data arrival time                                                  0.35
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U4/wptr_sync_reg[0]/CK (SDFFRQX2M)        0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.35
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.42
+
+
+  Startpoint: ASYNC_FIFO_U5/U4/rptr_sync1_reg[1]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U4/rptr_sync_reg[1]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U4/rptr_sync1_reg[1]/CK (SDFFRQX2M)       0.00       0.00 r
+  ASYNC_FIFO_U5/U4/rptr_sync1_reg[1]/Q (SDFFRQX2M)        0.35       0.35 r
+  ASYNC_FIFO_U5/U4/rptr_sync_reg[1]/D (SDFFRQX2M)         0.00       0.35 r
+  data arrival time                                                  0.35
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U4/rptr_sync_reg[1]/CK (SDFFRQX2M)        0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.35
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.42
+
+
+  Startpoint: ASYNC_FIFO_U5/U4/rptr_sync1_reg[0]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U4/rptr_sync_reg[0]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U4/rptr_sync1_reg[0]/CK (SDFFRQX2M)       0.00       0.00 r
+  ASYNC_FIFO_U5/U4/rptr_sync1_reg[0]/Q (SDFFRQX2M)        0.35       0.35 r
+  ASYNC_FIFO_U5/U4/rptr_sync_reg[0]/D (SDFFRQX2M)         0.00       0.35 r
+  data arrival time                                                  0.35
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U4/rptr_sync_reg[0]/CK (SDFFRQX2M)        0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.35
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.42
+
+
+  Startpoint: ASYNC_FIFO_U5/U4/rptr_sync1_reg[3]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U4/rptr_sync_reg[3]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U4/rptr_sync1_reg[3]/CK (SDFFRQX2M)       0.00       0.00 r
+  ASYNC_FIFO_U5/U4/rptr_sync1_reg[3]/Q (SDFFRQX2M)        0.35       0.35 r
+  ASYNC_FIFO_U5/U4/rptr_sync_reg[3]/D (SDFFRQX2M)         0.00       0.35 r
+  data arrival time                                                  0.35
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U4/rptr_sync_reg[3]/CK (SDFFRQX2M)        0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.35
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.42
+
+
+  Startpoint: ASYNC_FIFO_U5/U4/rptr_sync1_reg[2]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U4/rptr_sync_reg[2]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U4/rptr_sync1_reg[2]/CK (SDFFRQX2M)       0.00       0.00 r
+  ASYNC_FIFO_U5/U4/rptr_sync1_reg[2]/Q (SDFFRQX2M)        0.35       0.35 r
+  ASYNC_FIFO_U5/U4/rptr_sync_reg[2]/D (SDFFRQX2M)         0.00       0.35 r
+  data arrival time                                                  0.35
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U4/rptr_sync_reg[2]/CK (SDFFRQX2M)        0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.35
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.42
+
+
+  Startpoint: ASYNC_FIFO_U5/U2/wptr_reg[1]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U4/wptr_sync1_reg[1]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U2/wptr_reg[1]/CK (SDFFRQX2M)             0.00       0.00 r
+  ASYNC_FIFO_U5/U2/wptr_reg[1]/Q (SDFFRQX2M)              0.37       0.37 r
+  ASYNC_FIFO_U5/U2/wptr[1] (FIFO_WR_test_1)               0.00       0.37 r
+  ASYNC_FIFO_U5/U4/wptr[1] (DF_SYNC_test_1)               0.00       0.37 r
+  ASYNC_FIFO_U5/U4/wptr_sync1_reg[1]/D (SDFFRQX2M)        0.00       0.37 r
+  data arrival time                                                  0.37
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U4/wptr_sync1_reg[1]/CK (SDFFRQX2M)       0.00       0.10 r
+  library hold time                                      -0.17      -0.07
+  data required time                                                -0.07
+  --------------------------------------------------------------------------
+  data required time                                                -0.07
+  data arrival time                                                 -0.37
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.44
+
+
+  Startpoint: ASYNC_FIFO_U5/U2/wptr_reg[0]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U4/wptr_sync1_reg[0]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U2/wptr_reg[0]/CK (SDFFRQX2M)             0.00       0.00 r
+  ASYNC_FIFO_U5/U2/wptr_reg[0]/Q (SDFFRQX2M)              0.37       0.37 r
+  ASYNC_FIFO_U5/U2/wptr[0] (FIFO_WR_test_1)               0.00       0.37 r
+  ASYNC_FIFO_U5/U4/wptr[0] (DF_SYNC_test_1)               0.00       0.37 r
+  ASYNC_FIFO_U5/U4/wptr_sync1_reg[0]/D (SDFFRQX2M)        0.00       0.37 r
+  data arrival time                                                  0.37
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U4/wptr_sync1_reg[0]/CK (SDFFRQX2M)       0.00       0.10 r
+  library hold time                                      -0.17      -0.07
+  data required time                                                -0.07
+  --------------------------------------------------------------------------
+  data required time                                                -0.07
+  data arrival time                                                 -0.37
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.44
+
+
+  Startpoint: DATA_SYNC_U2/stage_reg[1]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: DATA_SYNC_U2/enable_flop_reg
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  DATA_SYNC_U2/stage_reg[1]/CK (SDFFRQX2M)                0.00       0.00 r
+  DATA_SYNC_U2/stage_reg[1]/Q (SDFFRQX2M)                 0.38       0.38 r
+  DATA_SYNC_U2/enable_flop_reg/D (SDFFRQX2M)              0.00       0.38 r
+  data arrival time                                                  0.38
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  DATA_SYNC_U2/enable_flop_reg/CK (SDFFRQX2M)             0.00       0.10 r
+  library hold time                                      -0.17      -0.07
+  data required time                                                -0.07
+  --------------------------------------------------------------------------
+  data required time                                                -0.07
+  data arrival time                                                 -0.38
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.44
+
+
+  Startpoint: ASYNC_FIFO_U5/U3/rptr_reg[3]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U4/rptr_sync1_reg[3]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U3/rptr_reg[3]/CK (SDFFRQX2M)             0.00       0.00 r
+  ASYNC_FIFO_U5/U3/rptr_reg[3]/Q (SDFFRQX2M)              0.38       0.38 r
+  ASYNC_FIFO_U5/U3/rptr[3] (FIFO_RD_test_1)               0.00       0.38 r
+  ASYNC_FIFO_U5/U4/rptr[3] (DF_SYNC_test_1)               0.00       0.38 r
+  ASYNC_FIFO_U5/U4/rptr_sync1_reg[3]/D (SDFFRQX2M)        0.00       0.38 r
+  data arrival time                                                  0.38
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U4/rptr_sync1_reg[3]/CK (SDFFRQX2M)       0.00       0.10 r
+  library hold time                                      -0.17      -0.07
+  data required time                                                -0.07
+  --------------------------------------------------------------------------
+  data required time                                                -0.07
+  data arrival time                                                 -0.38
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.44
+
+
+  Startpoint: ASYNC_FIFO_U5/U3/rptr_reg[2]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U4/rptr_sync1_reg[2]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U3/rptr_reg[2]/CK (SDFFRQX2M)             0.00       0.00 r
+  ASYNC_FIFO_U5/U3/rptr_reg[2]/Q (SDFFRQX2M)              0.38       0.38 r
+  ASYNC_FIFO_U5/U3/rptr[2] (FIFO_RD_test_1)               0.00       0.38 r
+  ASYNC_FIFO_U5/U4/rptr[2] (DF_SYNC_test_1)               0.00       0.38 r
+  ASYNC_FIFO_U5/U4/rptr_sync1_reg[2]/D (SDFFRQX2M)        0.00       0.38 r
+  data arrival time                                                  0.38
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U4/rptr_sync1_reg[2]/CK (SDFFRQX2M)       0.00       0.10 r
+  library hold time                                      -0.17      -0.07
+  data required time                                                -0.07
+  --------------------------------------------------------------------------
+  data required time                                                -0.07
+  data arrival time                                                 -0.38
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.44
+
+
+  Startpoint: ASYNC_FIFO_U5/U3/rptr_reg[1]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U4/rptr_sync1_reg[1]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U3/rptr_reg[1]/CK (SDFFRQX2M)             0.00       0.00 r
+  ASYNC_FIFO_U5/U3/rptr_reg[1]/Q (SDFFRQX2M)              0.38       0.38 r
+  ASYNC_FIFO_U5/U3/rptr[1] (FIFO_RD_test_1)               0.00       0.38 r
+  ASYNC_FIFO_U5/U4/rptr[1] (DF_SYNC_test_1)               0.00       0.38 r
+  ASYNC_FIFO_U5/U4/rptr_sync1_reg[1]/D (SDFFRQX2M)        0.00       0.38 r
+  data arrival time                                                  0.38
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U4/rptr_sync1_reg[1]/CK (SDFFRQX2M)       0.00       0.10 r
+  library hold time                                      -0.17      -0.07
+  data required time                                                -0.07
+  --------------------------------------------------------------------------
+  data required time                                                -0.07
+  data arrival time                                                 -0.38
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.44
+
+
+  Startpoint: ASYNC_FIFO_U5/U3/rptr_reg[0]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U4/rptr_sync1_reg[0]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U3/rptr_reg[0]/CK (SDFFRQX2M)             0.00       0.00 r
+  ASYNC_FIFO_U5/U3/rptr_reg[0]/Q (SDFFRQX2M)              0.38       0.38 r
+  ASYNC_FIFO_U5/U3/rptr[0] (FIFO_RD_test_1)               0.00       0.38 r
+  ASYNC_FIFO_U5/U4/rptr[0] (DF_SYNC_test_1)               0.00       0.38 r
+  ASYNC_FIFO_U5/U4/rptr_sync1_reg[0]/D (SDFFRQX2M)        0.00       0.38 r
+  data arrival time                                                  0.38
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U4/rptr_sync1_reg[0]/CK (SDFFRQX2M)       0.00       0.10 r
+  library hold time                                      -0.17      -0.07
+  data required time                                                -0.07
+  --------------------------------------------------------------------------
+  data required time                                                -0.07
+  data arrival time                                                 -0.38
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.44
+
+
+  Startpoint: ASYNC_FIFO_U5/U2/wptr_reg[3]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U4/wptr_sync1_reg[3]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U2/wptr_reg[3]/CK (SDFFRQX2M)             0.00       0.00 r
+  ASYNC_FIFO_U5/U2/wptr_reg[3]/Q (SDFFRQX2M)              0.38       0.38 r
+  ASYNC_FIFO_U5/U2/wptr[3] (FIFO_WR_test_1)               0.00       0.38 r
+  ASYNC_FIFO_U5/U4/wptr[3] (DF_SYNC_test_1)               0.00       0.38 r
+  ASYNC_FIFO_U5/U4/wptr_sync1_reg[3]/D (SDFFRQX2M)        0.00       0.38 r
+  data arrival time                                                  0.38
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U4/wptr_sync1_reg[3]/CK (SDFFRQX2M)       0.00       0.10 r
+  library hold time                                      -0.17      -0.07
+  data required time                                                -0.07
+  --------------------------------------------------------------------------
+  data required time                                                -0.07
+  data arrival time                                                 -0.38
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.45
+
+
+  Startpoint: ASYNC_FIFO_U5/U2/wptr_reg[2]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U4/wptr_sync1_reg[2]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U2/wptr_reg[2]/CK (SDFFRQX2M)             0.00       0.00 r
+  ASYNC_FIFO_U5/U2/wptr_reg[2]/Q (SDFFRQX2M)              0.38       0.38 r
+  ASYNC_FIFO_U5/U2/wptr[2] (FIFO_WR_test_1)               0.00       0.38 r
+  ASYNC_FIFO_U5/U4/wptr[2] (DF_SYNC_test_1)               0.00       0.38 r
+  ASYNC_FIFO_U5/U4/wptr_sync1_reg[2]/D (SDFFRQX2M)        0.00       0.38 r
+  data arrival time                                                  0.38
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U4/wptr_sync1_reg[2]/CK (SDFFRQX2M)       0.00       0.10 r
+  library hold time                                      -0.17      -0.07
+  data required time                                                -0.07
+  --------------------------------------------------------------------------
+  data required time                                                -0.07
+  data arrival time                                                 -0.38
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.45
+
+
+  Startpoint: ASYNC_FIFO_U5/U2/wptr_bi_reg[3]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U2/wptr_reg[3]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U2/wptr_bi_reg[3]/CK (SDFFRQX2M)          0.00       0.00 r
+  ASYNC_FIFO_U5/U2/wptr_bi_reg[3]/Q (SDFFRQX2M)           0.39       0.39 r
+  ASYNC_FIFO_U5/U2/wptr_reg[3]/D (SDFFRQX2M)              0.00       0.39 r
+  data arrival time                                                  0.39
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U2/wptr_reg[3]/CK (SDFFRQX2M)             0.00       0.10 r
+  library hold time                                      -0.17      -0.07
+  data required time                                                -0.07
+  --------------------------------------------------------------------------
+  data required time                                                -0.07
+  data arrival time                                                 -0.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.46
+
+
+  Startpoint: Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[7]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[7]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[7]/CK (SDFFRX2M)
+                                                          0.00       0.00 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[7]/QN (SDFFRX2M)
+                                                          0.29       0.29 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/U119/Y (OAI22X1M)           0.08       0.37 f
+  Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[7]/D (SDFFRX2M)
+                                                          0.00       0.37 f
+  data arrival time                                                  0.37
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[7]/CK (SDFFRX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.20      -0.10
+  data required time                                                -0.10
+  --------------------------------------------------------------------------
+  data required time                                                -0.10
+  data arrival time                                                 -0.37
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.47
+
+
+  Startpoint: ASYNC_FIFO_U5/U3/rptr_bi_reg[3]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U3/rptr_reg[3]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U3/rptr_bi_reg[3]/CK (SDFFRQX2M)          0.00       0.00 r
+  ASYNC_FIFO_U5/U3/rptr_bi_reg[3]/Q (SDFFRQX2M)           0.42       0.42 r
+  ASYNC_FIFO_U5/U3/rptr_reg[3]/D (SDFFRQX2M)              0.00       0.42 r
+  data arrival time                                                  0.42
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U3/rptr_reg[3]/CK (SDFFRQX2M)             0.00       0.10 r
+  library hold time                                      -0.18      -0.08
+  data required time                                                -0.08
+  --------------------------------------------------------------------------
+  data required time                                                -0.08
+  data arrival time                                                 -0.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.49
+
+
+  Startpoint: Domain_2_TOP_U1/UART_U0/U1/U2/sample_3_reg
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_2_TOP_U1/UART_U0/U1/U2/sample_3_reg
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_2_TOP_U1/UART_U0/U1/U2/sample_3_reg/CK (SDFFRX1M)
+                                                          0.00       0.00 r
+  Domain_2_TOP_U1/UART_U0/U1/U2/sample_3_reg/QN (SDFFRX1M)
+                                                          0.28       0.28 f
+  Domain_2_TOP_U1/UART_U0/U1/U2/U24/Y (OAI2BB2X1M)        0.14       0.42 r
+  Domain_2_TOP_U1/UART_U0/U1/U2/sample_3_reg/D (SDFFRX1M)
+                                                          0.00       0.42 r
+  data arrival time                                                  0.42
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_2_TOP_U1/UART_U0/U1/U2/sample_3_reg/CK (SDFFRX1M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.18      -0.08
+  data required time                                                -0.08
+  --------------------------------------------------------------------------
+  data required time                                                -0.08
+  data arrival time                                                 -0.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.50
+
+
+  Startpoint: Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[4]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[4]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[4]/CK (SDFFRX1M)
+                                                          0.00       0.00 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[4]/QN (SDFFRX1M)
+                                                          0.30       0.30 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/U122/Y (OAI22X1M)           0.09       0.39 f
+  Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[4]/D (SDFFRX1M)
+                                                          0.00       0.39 f
+  data arrival time                                                  0.39
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[4]/CK (SDFFRX1M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.22      -0.12
+  data required time                                                -0.12
+  --------------------------------------------------------------------------
+  data required time                                                -0.12
+  data arrival time                                                 -0.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.51
+
+
+  Startpoint: Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[6]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[6]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[6]/CK (SDFFRX1M)
+                                                          0.00       0.00 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[6]/QN (SDFFRX1M)
+                                                          0.30       0.30 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/U120/Y (OAI22X1M)           0.09       0.39 f
+  Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[6]/D (SDFFRX1M)
+                                                          0.00       0.39 f
+  data arrival time                                                  0.39
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[6]/CK (SDFFRX1M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.22      -0.12
+  data required time                                                -0.12
+  --------------------------------------------------------------------------
+  data required time                                                -0.12
+  data arrival time                                                 -0.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.51
+
+
+  Startpoint: Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[5]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[5]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[5]/CK (SDFFRX1M)
+                                                          0.00       0.00 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[5]/QN (SDFFRX1M)
+                                                          0.30       0.30 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/U121/Y (OAI22X1M)           0.09       0.39 f
+  Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[5]/D (SDFFRX1M)
+                                                          0.00       0.39 f
+  data arrival time                                                  0.39
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[5]/CK (SDFFRX1M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.22      -0.12
+  data required time                                                -0.12
+  --------------------------------------------------------------------------
+  data required time                                                -0.12
+  data arrival time                                                 -0.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.51
+
+
+  Startpoint: Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[3]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[3]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[3]/CK (SDFFRX1M)
+                                                          0.00       0.00 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[3]/QN (SDFFRX1M)
+                                                          0.30       0.30 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/U123/Y (OAI22X1M)           0.09       0.39 f
+  Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[3]/D (SDFFRX1M)
+                                                          0.00       0.39 f
+  data arrival time                                                  0.39
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[3]/CK (SDFFRX1M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.23      -0.13
+  data required time                                                -0.13
+  --------------------------------------------------------------------------
+  data required time                                                -0.13
+  data arrival time                                                 -0.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.51
+
+
+  Startpoint: Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[7]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[7]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[7]/CK (SDFFRX1M)
+                                                          0.00       0.00 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[7]/QN (SDFFRX1M)
+                                                          0.30       0.30 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/U171/Y (OAI22X1M)           0.09       0.39 f
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[7]/D (SDFFRX1M)
+                                                          0.00       0.39 f
+  data arrival time                                                  0.39
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[7]/CK (SDFFRX1M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.22      -0.12
+  data required time                                                -0.12
+  --------------------------------------------------------------------------
+  data required time                                                -0.12
+  data arrival time                                                 -0.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.51
+
+
+  Startpoint: Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[1]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[1]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[1]/CK (SDFFRX1M)
+                                                          0.00       0.00 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[1]/QN (SDFFRX1M)
+                                                          0.30       0.30 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/U125/Y (OAI22X1M)           0.09       0.39 f
+  Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[1]/D (SDFFRX1M)
+                                                          0.00       0.39 f
+  data arrival time                                                  0.39
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[1]/CK (SDFFRX1M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.23      -0.13
+  data required time                                                -0.13
+  --------------------------------------------------------------------------
+  data required time                                                -0.13
+  data arrival time                                                 -0.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.51
+
+
+  Startpoint: Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[2]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[2]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[2]/CK (SDFFRX1M)
+                                                          0.00       0.00 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[2]/QN (SDFFRX1M)
+                                                          0.30       0.30 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/U124/Y (OAI22X1M)           0.09       0.39 f
+  Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[2]/D (SDFFRX1M)
+                                                          0.00       0.39 f
+  data arrival time                                                  0.39
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[2]/CK (SDFFRX1M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.23      -0.13
+  data required time                                                -0.13
+  --------------------------------------------------------------------------
+  data required time                                                -0.13
+  data arrival time                                                 -0.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.51
+
+
+  Startpoint: Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[0]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[0]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[0]/CK (SDFFRX1M)
+                                                          0.00       0.00 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[0]/QN (SDFFRX1M)
+                                                          0.30       0.30 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/U118/Y (OAI22X1M)           0.09       0.39 f
+  Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[0]/D (SDFFRX1M)
+                                                          0.00       0.39 f
+  data arrival time                                                  0.39
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[0]/CK (SDFFRX1M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.23      -0.13
+  data required time                                                -0.13
+  --------------------------------------------------------------------------
+  data required time                                                -0.13
+  data arrival time                                                 -0.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.51
+
+
+  Startpoint: Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[7]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[7]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[7]/CK (SDFFRX1M)
+                                                          0.00       0.00 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[7]/QN (SDFFRX1M)
+                                                          0.30       0.30 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/U127/Y (OAI22X1M)           0.09       0.39 f
+  Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[7]/D (SDFFRX1M)
+                                                          0.00       0.39 f
+  data arrival time                                                  0.39
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[7]/CK (SDFFRX1M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.22      -0.12
+  data required time                                                -0.12
+  --------------------------------------------------------------------------
+  data required time                                                -0.12
+  data arrival time                                                 -0.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.51
+
+
+  Startpoint: Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[4]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[4]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[4]/CK (SDFFRX1M)
+                                                          0.00       0.00 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[4]/QN (SDFFRX1M)
+                                                          0.30       0.30 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/U174/Y (OAI22X1M)           0.09       0.39 f
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[4]/D (SDFFRX1M)
+                                                          0.00       0.39 f
+  data arrival time                                                  0.39
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[4]/CK (SDFFRX1M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.22      -0.12
+  data required time                                                -0.12
+  --------------------------------------------------------------------------
+  data required time                                                -0.12
+  data arrival time                                                 -0.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.51
+
+
+  Startpoint: Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[6]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[6]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[6]/CK (SDFFRX1M)
+                                                          0.00       0.00 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[6]/QN (SDFFRX1M)
+                                                          0.30       0.30 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/U172/Y (OAI22X1M)           0.09       0.39 f
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[6]/D (SDFFRX1M)
+                                                          0.00       0.39 f
+  data arrival time                                                  0.39
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[6]/CK (SDFFRX1M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.22      -0.12
+  data required time                                                -0.12
+  --------------------------------------------------------------------------
+  data required time                                                -0.12
+  data arrival time                                                 -0.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.51
+
+
+  Startpoint: Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[5]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[5]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[5]/CK (SDFFRX1M)
+                                                          0.00       0.00 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[5]/QN (SDFFRX1M)
+                                                          0.30       0.30 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/U173/Y (OAI22X1M)           0.09       0.39 f
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[5]/D (SDFFRX1M)
+                                                          0.00       0.39 f
+  data arrival time                                                  0.39
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[5]/CK (SDFFRX1M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.22      -0.12
+  data required time                                                -0.12
+  --------------------------------------------------------------------------
+  data required time                                                -0.12
+  data arrival time                                                 -0.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.51
+
+
+  Startpoint: Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[4]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[4]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[4]/CK (SDFFRX1M)
+                                                          0.00       0.00 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[4]/QN (SDFFRX1M)
+                                                          0.30       0.30 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/U130/Y (OAI22X1M)           0.09       0.39 f
+  Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[4]/D (SDFFRX1M)
+                                                          0.00       0.39 f
+  data arrival time                                                  0.39
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[4]/CK (SDFFRX1M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.22      -0.12
+  data required time                                                -0.12
+  --------------------------------------------------------------------------
+  data required time                                                -0.12
+  data arrival time                                                 -0.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.51
+
+
+  Startpoint: Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[6]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[6]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[6]/CK (SDFFRX1M)
+                                                          0.00       0.00 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[6]/QN (SDFFRX1M)
+                                                          0.30       0.30 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/U128/Y (OAI22X1M)           0.09       0.39 f
+  Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[6]/D (SDFFRX1M)
+                                                          0.00       0.39 f
+  data arrival time                                                  0.39
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[6]/CK (SDFFRX1M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.22      -0.12
+  data required time                                                -0.12
+  --------------------------------------------------------------------------
+  data required time                                                -0.12
+  data arrival time                                                 -0.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.51
+
+
+  Startpoint: Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[5]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[5]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[5]/CK (SDFFRX1M)
+                                                          0.00       0.00 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[5]/QN (SDFFRX1M)
+                                                          0.30       0.30 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/U129/Y (OAI22X1M)           0.09       0.39 f
+  Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[5]/D (SDFFRX1M)
+                                                          0.00       0.39 f
+  data arrival time                                                  0.39
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[5]/CK (SDFFRX1M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.22      -0.12
+  data required time                                                -0.12
+  --------------------------------------------------------------------------
+  data required time                                                -0.12
+  data arrival time                                                 -0.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.51
+
+
+  Startpoint: Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[3]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[3]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[3]/CK (SDFFRX1M)
+                                                          0.00       0.00 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[3]/QN (SDFFRX1M)
+                                                          0.30       0.30 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/U175/Y (OAI22X1M)           0.09       0.39 f
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[3]/D (SDFFRX1M)
+                                                          0.00       0.39 f
+  data arrival time                                                  0.39
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[3]/CK (SDFFRX1M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.23      -0.13
+  data required time                                                -0.13
+  --------------------------------------------------------------------------
+  data required time                                                -0.13
+  data arrival time                                                 -0.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.51
+
+
+  Startpoint: Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[3]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[3]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[3]/CK (SDFFRX1M)
+                                                          0.00       0.00 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[3]/QN (SDFFRX1M)
+                                                          0.30       0.30 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/U131/Y (OAI22X1M)           0.09       0.39 f
+  Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[3]/D (SDFFRX1M)
+                                                          0.00       0.39 f
+  data arrival time                                                  0.39
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[3]/CK (SDFFRX1M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.23      -0.13
+  data required time                                                -0.13
+  --------------------------------------------------------------------------
+  data required time                                                -0.13
+  data arrival time                                                 -0.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.51
+
+
+  Startpoint: Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[1]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[1]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[1]/CK (SDFFRX1M)
+                                                          0.00       0.00 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[1]/QN (SDFFRX1M)
+                                                          0.30       0.30 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/U177/Y (OAI22X1M)           0.09       0.39 f
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[1]/D (SDFFRX1M)
+                                                          0.00       0.39 f
+  data arrival time                                                  0.39
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[1]/CK (SDFFRX1M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.23      -0.13
+  data required time                                                -0.13
+  --------------------------------------------------------------------------
+  data required time                                                -0.13
+  data arrival time                                                 -0.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.51
+
+
+  Startpoint: Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[2]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[2]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[2]/CK (SDFFRX1M)
+                                                          0.00       0.00 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[2]/QN (SDFFRX1M)
+                                                          0.30       0.30 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/U176/Y (OAI22X1M)           0.09       0.39 f
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[2]/D (SDFFRX1M)
+                                                          0.00       0.39 f
+  data arrival time                                                  0.39
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[2]/CK (SDFFRX1M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.23      -0.13
+  data required time                                                -0.13
+  --------------------------------------------------------------------------
+  data required time                                                -0.13
+  data arrival time                                                 -0.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.51
+
+
+  Startpoint: Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[0]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[0]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[0]/CK (SDFFRX1M)
+                                                          0.00       0.00 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[0]/QN (SDFFRX1M)
+                                                          0.30       0.30 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/U170/Y (OAI22X1M)           0.09       0.39 f
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[0]/D (SDFFRX1M)
+                                                          0.00       0.39 f
+  data arrival time                                                  0.39
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[0]/CK (SDFFRX1M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.23      -0.13
+  data required time                                                -0.13
+  --------------------------------------------------------------------------
+  data required time                                                -0.13
+  data arrival time                                                 -0.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.51
+
+
+  Startpoint: Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[1]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[1]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[1]/CK (SDFFRX1M)
+                                                          0.00       0.00 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[1]/QN (SDFFRX1M)
+                                                          0.30       0.30 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/U133/Y (OAI22X1M)           0.09       0.39 f
+  Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[1]/D (SDFFRX1M)
+                                                          0.00       0.39 f
+  data arrival time                                                  0.39
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[1]/CK (SDFFRX1M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.23      -0.13
+  data required time                                                -0.13
+  --------------------------------------------------------------------------
+  data required time                                                -0.13
+  data arrival time                                                 -0.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.51
+
+
+  Startpoint: Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[2]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[2]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[2]/CK (SDFFRX1M)
+                                                          0.00       0.00 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[2]/QN (SDFFRX1M)
+                                                          0.30       0.30 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/U132/Y (OAI22X1M)           0.09       0.39 f
+  Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[2]/D (SDFFRX1M)
+                                                          0.00       0.39 f
+  data arrival time                                                  0.39
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[2]/CK (SDFFRX1M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.23      -0.13
+  data required time                                                -0.13
+  --------------------------------------------------------------------------
+  data required time                                                -0.13
+  data arrival time                                                 -0.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.51
+
+
+  Startpoint: Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[0]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[0]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[0]/CK (SDFFRX1M)
+                                                          0.00       0.00 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[0]/QN (SDFFRX1M)
+                                                          0.30       0.30 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/U126/Y (OAI22X1M)           0.09       0.39 f
+  Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[0]/D (SDFFRX1M)
+                                                          0.00       0.39 f
+  data arrival time                                                  0.39
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[0]/CK (SDFFRX1M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.23      -0.13
+  data required time                                                -0.13
+  --------------------------------------------------------------------------
+  data required time                                                -0.13
+  data arrival time                                                 -0.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.51
+
+
+  Startpoint: Domain_2_TOP_U1/PULSE_GEN_U3/LVL_SIG_OLD_reg
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_2_TOP_U1/PULSE_GEN_U3/PULSE_SIG_reg
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_2_TOP_U1/PULSE_GEN_U3/LVL_SIG_OLD_reg/CK (SDFFRQX2M)
+                                                          0.00       0.00 r
+  Domain_2_TOP_U1/PULSE_GEN_U3/LVL_SIG_OLD_reg/Q (SDFFRQX2M)
+                                                          0.37       0.37 r
+  Domain_2_TOP_U1/PULSE_GEN_U3/U5/Y (NOR2BX2M)            0.04       0.41 f
+  Domain_2_TOP_U1/PULSE_GEN_U3/PULSE_SIG_reg/D (SDFFRQX2M)
+                                                          0.00       0.41 f
+  data arrival time                                                  0.41
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_2_TOP_U1/PULSE_GEN_U3/PULSE_SIG_reg/CK (SDFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.21      -0.11
+  data required time                                                -0.11
+  --------------------------------------------------------------------------
+  data required time                                                -0.11
+  data arrival time                                                 -0.41
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.52
+
+
+  Startpoint: Domain_1_TOP_U0/SYS_CTRL_U3/wr_addr_reg_reg[0]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_1_TOP_U0/SYS_CTRL_U3/wr_addr_reg_reg[0]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_addr_reg_reg[0]/CK (SDFFRX1M)
+                                                          0.00       0.00 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_addr_reg_reg[0]/QN (SDFFRX1M)
+                                                          0.31       0.31 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/U178/Y (OAI22X1M)           0.09       0.40 f
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_addr_reg_reg[0]/D (SDFFRX1M)
+                                                          0.00       0.40 f
+  data arrival time                                                  0.40
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_addr_reg_reg[0]/CK (SDFFRX1M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.22      -0.12
+  data required time                                                -0.12
+  --------------------------------------------------------------------------
+  data required time                                                -0.12
+  data arrival time                                                 -0.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.52
+
+
+  Startpoint: Domain_1_TOP_U0/SYS_CTRL_U3/wr_addr_reg_reg[1]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_1_TOP_U0/SYS_CTRL_U3/wr_addr_reg_reg[1]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_addr_reg_reg[1]/CK (SDFFRX1M)
+                                                          0.00       0.00 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_addr_reg_reg[1]/QN (SDFFRX1M)
+                                                          0.31       0.31 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/U181/Y (OAI22X1M)           0.09       0.40 f
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_addr_reg_reg[1]/D (SDFFRX1M)
+                                                          0.00       0.40 f
+  data arrival time                                                  0.40
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_addr_reg_reg[1]/CK (SDFFRX1M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.22      -0.12
+  data required time                                                -0.12
+  --------------------------------------------------------------------------
+  data required time                                                -0.12
+  data arrival time                                                 -0.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.52
+
+
+  Startpoint: Domain_1_TOP_U0/SYS_CTRL_U3/wr_addr_reg_reg[2]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_1_TOP_U0/SYS_CTRL_U3/wr_addr_reg_reg[2]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_addr_reg_reg[2]/CK (SDFFRX1M)
+                                                          0.00       0.00 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_addr_reg_reg[2]/QN (SDFFRX1M)
+                                                          0.31       0.31 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/U180/Y (OAI22X1M)           0.09       0.40 f
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_addr_reg_reg[2]/D (SDFFRX1M)
+                                                          0.00       0.40 f
+  data arrival time                                                  0.40
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_addr_reg_reg[2]/CK (SDFFRX1M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.22      -0.12
+  data required time                                                -0.12
+  --------------------------------------------------------------------------
+  data required time                                                -0.12
+  data arrival time                                                 -0.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.52
+
+
+  Startpoint: Domain_1_TOP_U0/SYS_CTRL_U3/wr_addr_reg_reg[3]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_1_TOP_U0/SYS_CTRL_U3/wr_addr_reg_reg[3]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_addr_reg_reg[3]/CK (SDFFRX1M)
+                                                          0.00       0.00 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_addr_reg_reg[3]/QN (SDFFRX1M)
+                                                          0.31       0.31 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/U179/Y (OAI22X1M)           0.09       0.40 f
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_addr_reg_reg[3]/D (SDFFRX1M)
+                                                          0.00       0.40 f
+  data arrival time                                                  0.40
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_1_TOP_U0/SYS_CTRL_U3/wr_addr_reg_reg[3]/CK (SDFFRX1M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.22      -0.12
+  data required time                                                -0.12
+  --------------------------------------------------------------------------
+  data required time                                                -0.12
+  data arrival time                                                 -0.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.52
+
+
+  Startpoint: Domain_1_TOP_U0/SYS_CTRL_U3/alu_fun_reg_reg[3]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_1_TOP_U0/SYS_CTRL_U3/alu_fun_reg_reg[3]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_1_TOP_U0/SYS_CTRL_U3/alu_fun_reg_reg[3]/CK (SDFFRX1M)
+                                                          0.00       0.00 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/alu_fun_reg_reg[3]/QN (SDFFRX1M)
+                                                          0.31       0.31 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/U167/Y (OAI22X1M)           0.09       0.40 f
+  Domain_1_TOP_U0/SYS_CTRL_U3/alu_fun_reg_reg[3]/D (SDFFRX1M)
+                                                          0.00       0.40 f
+  data arrival time                                                  0.40
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_1_TOP_U0/SYS_CTRL_U3/alu_fun_reg_reg[3]/CK (SDFFRX1M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.23      -0.13
+  data required time                                                -0.13
+  --------------------------------------------------------------------------
+  data required time                                                -0.13
+  data arrival time                                                 -0.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.52
+
+
+  Startpoint: Domain_1_TOP_U0/SYS_CTRL_U3/alu_fun_reg_reg[1]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_1_TOP_U0/SYS_CTRL_U3/alu_fun_reg_reg[1]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_1_TOP_U0/SYS_CTRL_U3/alu_fun_reg_reg[1]/CK (SDFFRX1M)
+                                                          0.00       0.00 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/alu_fun_reg_reg[1]/QN (SDFFRX1M)
+                                                          0.31       0.31 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/U169/Y (OAI22X1M)           0.09       0.40 f
+  Domain_1_TOP_U0/SYS_CTRL_U3/alu_fun_reg_reg[1]/D (SDFFRX1M)
+                                                          0.00       0.40 f
+  data arrival time                                                  0.40
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_1_TOP_U0/SYS_CTRL_U3/alu_fun_reg_reg[1]/CK (SDFFRX1M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.23      -0.13
+  data required time                                                -0.13
+  --------------------------------------------------------------------------
+  data required time                                                -0.13
+  data arrival time                                                 -0.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.52
+
+
+  Startpoint: Domain_1_TOP_U0/SYS_CTRL_U3/alu_fun_reg_reg[2]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_1_TOP_U0/SYS_CTRL_U3/alu_fun_reg_reg[2]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_1_TOP_U0/SYS_CTRL_U3/alu_fun_reg_reg[2]/CK (SDFFRX1M)
+                                                          0.00       0.00 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/alu_fun_reg_reg[2]/QN (SDFFRX1M)
+                                                          0.31       0.31 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/U168/Y (OAI22X1M)           0.09       0.40 f
+  Domain_1_TOP_U0/SYS_CTRL_U3/alu_fun_reg_reg[2]/D (SDFFRX1M)
+                                                          0.00       0.40 f
+  data arrival time                                                  0.40
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_1_TOP_U0/SYS_CTRL_U3/alu_fun_reg_reg[2]/CK (SDFFRX1M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.23      -0.13
+  data required time                                                -0.13
+  --------------------------------------------------------------------------
+  data required time                                                -0.13
+  data arrival time                                                 -0.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.52
+
+
+  Startpoint: Domain_1_TOP_U0/SYS_CTRL_U3/alu_fun_reg_reg[0]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_1_TOP_U0/SYS_CTRL_U3/alu_fun_reg_reg[0]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_1_TOP_U0/SYS_CTRL_U3/alu_fun_reg_reg[0]/CK (SDFFRX1M)
+                                                          0.00       0.00 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/alu_fun_reg_reg[0]/QN (SDFFRX1M)
+                                                          0.31       0.31 r
+  Domain_1_TOP_U0/SYS_CTRL_U3/U166/Y (OAI22X1M)           0.09       0.40 f
+  Domain_1_TOP_U0/SYS_CTRL_U3/alu_fun_reg_reg[0]/D (SDFFRX1M)
+                                                          0.00       0.40 f
+  data arrival time                                                  0.40
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_1_TOP_U0/SYS_CTRL_U3/alu_fun_reg_reg[0]/CK (SDFFRX1M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.23      -0.13
+  data required time                                                -0.13
+  --------------------------------------------------------------------------
+  data required time                                                -0.13
+  data arrival time                                                 -0.40
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.52
+
+
+  Startpoint: Domain_2_TOP_U1/UART_U0/U1/U3/Counter_reg[3]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_2_TOP_U1/UART_U0/U1/U3/Counter_reg[3]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_2_TOP_U1/UART_U0/U1/U3/Counter_reg[3]/CK (SDFFRQX2M)
+                                                          0.00       0.00 r
+  Domain_2_TOP_U1/UART_U0/U1/U3/Counter_reg[3]/Q (SDFFRQX2M)
+                                                          0.38       0.38 r
+  Domain_2_TOP_U1/UART_U0/U1/U3/U16/Y (XNOR2X2M)          0.05       0.43 f
+  Domain_2_TOP_U1/UART_U0/U1/U3/Counter_reg[3]/D (SDFFRQX2M)
+                                                          0.00       0.43 f
+  data arrival time                                                  0.43
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_2_TOP_U1/UART_U0/U1/U3/Counter_reg[3]/CK (SDFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.21      -0.11
+  data required time                                                -0.11
+  --------------------------------------------------------------------------
+  data required time                                                -0.11
+  data arrival time                                                 -0.43
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.54
+
+
+  Startpoint: Domain_2_TOP_U1/UART_U0/U1/U3/Counter_reg[1]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_2_TOP_U1/UART_U0/U1/U3/Counter_reg[1]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_2_TOP_U1/UART_U0/U1/U3/Counter_reg[1]/CK (SDFFRQX2M)
+                                                          0.00       0.00 r
+  Domain_2_TOP_U1/UART_U0/U1/U3/Counter_reg[1]/Q (SDFFRQX2M)
+                                                          0.38       0.38 r
+  Domain_2_TOP_U1/UART_U0/U1/U3/U12/Y (XNOR2X2M)          0.05       0.43 f
+  Domain_2_TOP_U1/UART_U0/U1/U3/Counter_reg[1]/D (SDFFRQX2M)
+                                                          0.00       0.43 f
+  data arrival time                                                  0.43
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_2_TOP_U1/UART_U0/U1/U3/Counter_reg[1]/CK (SDFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.21      -0.11
+  data required time                                                -0.11
+  --------------------------------------------------------------------------
+  data required time                                                -0.11
+  data arrival time                                                 -0.43
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.54
+
+
+  Startpoint: ASYNC_FIFO_U5/U2/wptr_bi_reg[3]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U2/wptr_bi_reg[3]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U2/wptr_bi_reg[3]/CK (SDFFRQX2M)          0.00       0.00 r
+  ASYNC_FIFO_U5/U2/wptr_bi_reg[3]/Q (SDFFRQX2M)           0.39       0.39 r
+  ASYNC_FIFO_U5/U2/U8/Y (XNOR2X2M)                        0.05       0.44 f
+  ASYNC_FIFO_U5/U2/wptr_bi_reg[3]/D (SDFFRQX2M)           0.00       0.44 f
+  data arrival time                                                  0.44
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U2/wptr_bi_reg[3]/CK (SDFFRQX2M)          0.00       0.10 r
+  library hold time                                      -0.21      -0.11
+  data required time                                                -0.11
+  --------------------------------------------------------------------------
+  data required time                                                -0.11
+  data arrival time                                                 -0.44
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.55
+
+
+  Startpoint: Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[6]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[6]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[6]/CK (SDFFRQX2M)
+                                                          0.00       0.00 r
+  Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[6]/Q (SDFFRQX2M)
+                                                          0.37       0.37 r
+  Domain_2_TOP_U1/UART_U0/U0/U2/U52/Y (OAI2BB1X2M)        0.12       0.50 r
+  Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[6]/D (SDFFRQX2M)
+                                                          0.00       0.50 r
+  data arrival time                                                  0.50
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[6]/CK (SDFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.56
+
+
+  Startpoint: Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[5]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[5]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[5]/CK (SDFFRQX2M)
+                                                          0.00       0.00 r
+  Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[5]/Q (SDFFRQX2M)
+                                                          0.37       0.37 r
+  Domain_2_TOP_U1/UART_U0/U0/U2/U50/Y (OAI2BB1X2M)        0.12       0.50 r
+  Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[5]/D (SDFFRQX2M)
+                                                          0.00       0.50 r
+  data arrival time                                                  0.50
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[5]/CK (SDFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.56
+
+
+  Startpoint: Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[4]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[4]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[4]/CK (SDFFRQX2M)
+                                                          0.00       0.00 r
+  Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[4]/Q (SDFFRQX2M)
+                                                          0.37       0.37 r
+  Domain_2_TOP_U1/UART_U0/U0/U2/U48/Y (OAI2BB1X2M)        0.12       0.50 r
+  Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[4]/D (SDFFRQX2M)
+                                                          0.00       0.50 r
+  data arrival time                                                  0.50
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[4]/CK (SDFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.56
+
+
+  Startpoint: Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[3]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[3]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[3]/CK (SDFFRQX2M)
+                                                          0.00       0.00 r
+  Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[3]/Q (SDFFRQX2M)
+                                                          0.37       0.37 r
+  Domain_2_TOP_U1/UART_U0/U0/U2/U46/Y (OAI2BB1X2M)        0.12       0.50 r
+  Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[3]/D (SDFFRQX2M)
+                                                          0.00       0.50 r
+  data arrival time                                                  0.50
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[3]/CK (SDFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.56
+
+
+  Startpoint: Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[2]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[2]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[2]/CK (SDFFRQX2M)
+                                                          0.00       0.00 r
+  Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[2]/Q (SDFFRQX2M)
+                                                          0.37       0.37 r
+  Domain_2_TOP_U1/UART_U0/U0/U2/U44/Y (OAI2BB1X2M)        0.12       0.50 r
+  Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[2]/D (SDFFRQX2M)
+                                                          0.00       0.50 r
+  data arrival time                                                  0.50
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[2]/CK (SDFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.56
+
+
+  Startpoint: Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[1]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[1]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[1]/CK (SDFFRQX2M)
+                                                          0.00       0.00 r
+  Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[1]/Q (SDFFRQX2M)
+                                                          0.37       0.37 r
+  Domain_2_TOP_U1/UART_U0/U0/U2/U42/Y (OAI2BB1X2M)        0.12       0.50 r
+  Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[1]/D (SDFFRQX2M)
+                                                          0.00       0.50 r
+  data arrival time                                                  0.50
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[1]/CK (SDFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.56
+
+
+  Startpoint: Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[0]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[0]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[0]/CK (SDFFRQX2M)
+                                                          0.00       0.00 r
+  Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[0]/Q (SDFFRQX2M)
+                                                          0.37       0.37 r
+  Domain_2_TOP_U1/UART_U0/U0/U2/U40/Y (OAI2BB1X2M)        0.12       0.50 r
+  Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[0]/D (SDFFRQX2M)
+                                                          0.00       0.50 r
+  data arrival time                                                  0.50
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_2_TOP_U1/UART_U0/U0/U2/P_DATA_Hold_reg[0]/CK (SDFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.56
+
+
+  Startpoint: Domain_2_TOP_U1/UART_U0/U0/U4/P_DATA_Hold_reg[6]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_2_TOP_U1/UART_U0/U0/U4/P_DATA_Hold_reg[6]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_2_TOP_U1/UART_U0/U0/U4/P_DATA_Hold_reg[6]/CK (SDFFRQX2M)
+                                                          0.00       0.00 r
+  Domain_2_TOP_U1/UART_U0/U0/U4/P_DATA_Hold_reg[6]/Q (SDFFRQX2M)
+                                                          0.37       0.37 r
+  Domain_2_TOP_U1/UART_U0/U0/U4/U13/Y (AO2B2X2M)          0.13       0.50 r
+  Domain_2_TOP_U1/UART_U0/U0/U4/P_DATA_Hold_reg[6]/D (SDFFRQX2M)
+                                                          0.00       0.50 r
+  data arrival time                                                  0.50
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_2_TOP_U1/UART_U0/U0/U4/P_DATA_Hold_reg[6]/CK (SDFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.56
+
+
+  Startpoint: Domain_2_TOP_U1/UART_U0/U0/U4/P_DATA_Hold_reg[2]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_2_TOP_U1/UART_U0/U0/U4/P_DATA_Hold_reg[2]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_2_TOP_U1/UART_U0/U0/U4/P_DATA_Hold_reg[2]/CK (SDFFRQX2M)
+                                                          0.00       0.00 r
+  Domain_2_TOP_U1/UART_U0/U0/U4/P_DATA_Hold_reg[2]/Q (SDFFRQX2M)
+                                                          0.37       0.37 r
+  Domain_2_TOP_U1/UART_U0/U0/U4/U9/Y (AO2B2X2M)           0.13       0.50 r
+  Domain_2_TOP_U1/UART_U0/U0/U4/P_DATA_Hold_reg[2]/D (SDFFRQX2M)
+                                                          0.00       0.50 r
+  data arrival time                                                  0.50
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_2_TOP_U1/UART_U0/U0/U4/P_DATA_Hold_reg[2]/CK (SDFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.56
+
+
+  Startpoint: Domain_2_TOP_U1/UART_U0/U0/U4/P_DATA_Hold_reg[5]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_2_TOP_U1/UART_U0/U0/U4/P_DATA_Hold_reg[5]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_2_TOP_U1/UART_U0/U0/U4/P_DATA_Hold_reg[5]/CK (SDFFRQX2M)
+                                                          0.00       0.00 r
+  Domain_2_TOP_U1/UART_U0/U0/U4/P_DATA_Hold_reg[5]/Q (SDFFRQX2M)
+                                                          0.37       0.37 r
+  Domain_2_TOP_U1/UART_U0/U0/U4/U12/Y (AO2B2X2M)          0.13       0.50 r
+  Domain_2_TOP_U1/UART_U0/U0/U4/P_DATA_Hold_reg[5]/D (SDFFRQX2M)
+                                                          0.00       0.50 r
+  data arrival time                                                  0.50
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_2_TOP_U1/UART_U0/U0/U4/P_DATA_Hold_reg[5]/CK (SDFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.56
+
+
+  Startpoint: Domain_2_TOP_U1/UART_U0/U0/U4/P_DATA_Hold_reg[1]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_2_TOP_U1/UART_U0/U0/U4/P_DATA_Hold_reg[1]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_2_TOP_U1/UART_U0/U0/U4/P_DATA_Hold_reg[1]/CK (SDFFRQX2M)
+                                                          0.00       0.00 r
+  Domain_2_TOP_U1/UART_U0/U0/U4/P_DATA_Hold_reg[1]/Q (SDFFRQX2M)
+                                                          0.37       0.37 r
+  Domain_2_TOP_U1/UART_U0/U0/U4/U8/Y (AO2B2X2M)           0.13       0.50 r
+  Domain_2_TOP_U1/UART_U0/U0/U4/P_DATA_Hold_reg[1]/D (SDFFRQX2M)
+                                                          0.00       0.50 r
+  data arrival time                                                  0.50
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_2_TOP_U1/UART_U0/U0/U4/P_DATA_Hold_reg[1]/CK (SDFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.56
+
+
+  Startpoint: Domain_2_TOP_U1/UART_U0/U0/U4/P_DATA_Hold_reg[4]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_2_TOP_U1/UART_U0/U0/U4/P_DATA_Hold_reg[4]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_2_TOP_U1/UART_U0/U0/U4/P_DATA_Hold_reg[4]/CK (SDFFRQX2M)
+                                                          0.00       0.00 r
+  Domain_2_TOP_U1/UART_U0/U0/U4/P_DATA_Hold_reg[4]/Q (SDFFRQX2M)
+                                                          0.37       0.37 r
+  Domain_2_TOP_U1/UART_U0/U0/U4/U11/Y (AO2B2X2M)          0.13       0.51 r
+  Domain_2_TOP_U1/UART_U0/U0/U4/P_DATA_Hold_reg[4]/D (SDFFRQX2M)
+                                                          0.00       0.51 r
+  data arrival time                                                  0.51
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_2_TOP_U1/UART_U0/U0/U4/P_DATA_Hold_reg[4]/CK (SDFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.56
+
+
+  Startpoint: Domain_2_TOP_U1/UART_U0/U0/U4/P_DATA_Hold_reg[0]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_2_TOP_U1/UART_U0/U0/U4/P_DATA_Hold_reg[0]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_2_TOP_U1/UART_U0/U0/U4/P_DATA_Hold_reg[0]/CK (SDFFRQX2M)
+                                                          0.00       0.00 r
+  Domain_2_TOP_U1/UART_U0/U0/U4/P_DATA_Hold_reg[0]/Q (SDFFRQX2M)
+                                                          0.37       0.37 r
+  Domain_2_TOP_U1/UART_U0/U0/U4/U7/Y (AO2B2X2M)           0.13       0.51 r
+  Domain_2_TOP_U1/UART_U0/U0/U4/P_DATA_Hold_reg[0]/D (SDFFRQX2M)
+                                                          0.00       0.51 r
+  data arrival time                                                  0.51
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_2_TOP_U1/UART_U0/U0/U4/P_DATA_Hold_reg[0]/CK (SDFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.56
+
+
+  Startpoint: Domain_2_TOP_U1/UART_U0/U0/U2/ser_data_reg
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_2_TOP_U1/UART_U0/U0/U2/ser_data_reg
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_2_TOP_U1/UART_U0/U0/U2/ser_data_reg/CK (SDFFRQX2M)
+                                                          0.00       0.00 r
+  Domain_2_TOP_U1/UART_U0/U0/U2/ser_data_reg/Q (SDFFRQX2M)
+                                                          0.38       0.38 r
+  Domain_2_TOP_U1/UART_U0/U0/U2/U38/Y (OAI2BB1X2M)        0.13       0.51 r
+  Domain_2_TOP_U1/UART_U0/U0/U2/ser_data_reg/D (SDFFRQX2M)
+                                                          0.00       0.51 r
+  data arrival time                                                  0.51
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_2_TOP_U1/UART_U0/U0/U2/ser_data_reg/CK (SDFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.57
+
+
+  Startpoint: Domain_2_TOP_U1/UART_U0/U0/U2/Counter_Done_reg
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: Domain_2_TOP_U1/UART_U0/U0/U2/Counter_Done_reg
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Domain_2_TOP_U1/UART_U0/U0/U2/Counter_Done_reg/CK (SDFFRQX2M)
+                                                          0.00       0.00 r
+  Domain_2_TOP_U1/UART_U0/U0/U2/Counter_Done_reg/Q (SDFFRQX2M)
+                                                          0.36       0.36 r
+  Domain_2_TOP_U1/UART_U0/U0/U2/U30/Y (OAI2BB2X1M)        0.14       0.51 r
+  Domain_2_TOP_U1/UART_U0/U0/U2/Counter_Done_reg/D (SDFFRQX2M)
+                                                          0.00       0.51 r
+  data arrival time                                                  0.51
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  Domain_2_TOP_U1/UART_U0/U0/U2/Counter_Done_reg/CK (SDFFRQX2M)
+                                                          0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.57
+
+
+  Startpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][7]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][7]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][7]/CK (SDFFRQX2M)      0.00       0.00 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][7]/Q (SDFFRQX2M)       0.37       0.37 r
+  ASYNC_FIFO_U5/U1/U116/Y (OAI2BB2X1M)                    0.15       0.51 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][7]/D (SDFFRQX2M)       0.00       0.51 r
+  data arrival time                                                  0.51
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][7]/CK (SDFFRQX2M)      0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.57
+
+
+  Startpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][6]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][6]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][6]/CK (SDFFRQX2M)      0.00       0.00 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][6]/Q (SDFFRQX2M)       0.37       0.37 r
+  ASYNC_FIFO_U5/U1/U115/Y (OAI2BB2X1M)                    0.15       0.51 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][6]/D (SDFFRQX2M)       0.00       0.51 r
+  data arrival time                                                  0.51
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][6]/CK (SDFFRQX2M)      0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.57
+
+
+  Startpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][5]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][5]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][5]/CK (SDFFRQX2M)      0.00       0.00 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][5]/Q (SDFFRQX2M)       0.37       0.37 r
+  ASYNC_FIFO_U5/U1/U114/Y (OAI2BB2X1M)                    0.15       0.51 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][5]/D (SDFFRQX2M)       0.00       0.51 r
+  data arrival time                                                  0.51
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][5]/CK (SDFFRQX2M)      0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.57
+
+
+  Startpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][4]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][4]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][4]/CK (SDFFRQX2M)      0.00       0.00 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][4]/Q (SDFFRQX2M)       0.37       0.37 r
+  ASYNC_FIFO_U5/U1/U113/Y (OAI2BB2X1M)                    0.15       0.51 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][4]/D (SDFFRQX2M)       0.00       0.51 r
+  data arrival time                                                  0.51
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][4]/CK (SDFFRQX2M)      0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.57
+
+
+  Startpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][3]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][3]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][3]/CK (SDFFRQX2M)      0.00       0.00 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][3]/Q (SDFFRQX2M)       0.37       0.37 r
+  ASYNC_FIFO_U5/U1/U112/Y (OAI2BB2X1M)                    0.15       0.51 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][3]/D (SDFFRQX2M)       0.00       0.51 r
+  data arrival time                                                  0.51
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][3]/CK (SDFFRQX2M)      0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.57
+
+
+  Startpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][2]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][2]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][2]/CK (SDFFRQX2M)      0.00       0.00 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][2]/Q (SDFFRQX2M)       0.37       0.37 r
+  ASYNC_FIFO_U5/U1/U111/Y (OAI2BB2X1M)                    0.15       0.51 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][2]/D (SDFFRQX2M)       0.00       0.51 r
+  data arrival time                                                  0.51
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][2]/CK (SDFFRQX2M)      0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.57
+
+
+  Startpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][1]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][1]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][1]/CK (SDFFRQX2M)      0.00       0.00 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][1]/Q (SDFFRQX2M)       0.37       0.37 r
+  ASYNC_FIFO_U5/U1/U110/Y (OAI2BB2X1M)                    0.15       0.51 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][1]/D (SDFFRQX2M)       0.00       0.51 r
+  data arrival time                                                  0.51
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][1]/CK (SDFFRQX2M)      0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.57
+
+
+  Startpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][0]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][0]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][0]/CK (SDFFRQX2M)      0.00       0.00 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][0]/Q (SDFFRQX2M)       0.37       0.37 r
+  ASYNC_FIFO_U5/U1/U109/Y (OAI2BB2X1M)                    0.15       0.51 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][0]/D (SDFFRQX2M)       0.00       0.51 r
+  data arrival time                                                  0.51
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[0][0]/CK (SDFFRQX2M)      0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.57
+
+
+  Startpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][7]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][7]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][7]/CK (SDFFRQX2M)      0.00       0.00 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][7]/Q (SDFFRQX2M)       0.37       0.37 r
+  ASYNC_FIFO_U5/U1/U163/Y (OAI2BB2X1M)                    0.15       0.51 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][7]/D (SDFFRQX2M)       0.00       0.51 r
+  data arrival time                                                  0.51
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][7]/CK (SDFFRQX2M)      0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.57
+
+
+  Startpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][6]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][6]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][6]/CK (SDFFRQX2M)      0.00       0.00 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][6]/Q (SDFFRQX2M)       0.37       0.37 r
+  ASYNC_FIFO_U5/U1/U162/Y (OAI2BB2X1M)                    0.15       0.51 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][6]/D (SDFFRQX2M)       0.00       0.51 r
+  data arrival time                                                  0.51
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][6]/CK (SDFFRQX2M)      0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.57
+
+
+  Startpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][5]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][5]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][5]/CK (SDFFRQX2M)      0.00       0.00 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][5]/Q (SDFFRQX2M)       0.37       0.37 r
+  ASYNC_FIFO_U5/U1/U161/Y (OAI2BB2X1M)                    0.15       0.51 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][5]/D (SDFFRQX2M)       0.00       0.51 r
+  data arrival time                                                  0.51
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][5]/CK (SDFFRQX2M)      0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.57
+
+
+  Startpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][4]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][4]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][4]/CK (SDFFRQX2M)      0.00       0.00 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][4]/Q (SDFFRQX2M)       0.37       0.37 r
+  ASYNC_FIFO_U5/U1/U160/Y (OAI2BB2X1M)                    0.15       0.51 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][4]/D (SDFFRQX2M)       0.00       0.51 r
+  data arrival time                                                  0.51
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][4]/CK (SDFFRQX2M)      0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.57
+
+
+  Startpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][3]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][3]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][3]/CK (SDFFRQX2M)      0.00       0.00 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][3]/Q (SDFFRQX2M)       0.37       0.37 r
+  ASYNC_FIFO_U5/U1/U159/Y (OAI2BB2X1M)                    0.15       0.51 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][3]/D (SDFFRQX2M)       0.00       0.51 r
+  data arrival time                                                  0.51
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][3]/CK (SDFFRQX2M)      0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.57
+
+
+  Startpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][2]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][2]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][2]/CK (SDFFRQX2M)      0.00       0.00 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][2]/Q (SDFFRQX2M)       0.37       0.37 r
+  ASYNC_FIFO_U5/U1/U158/Y (OAI2BB2X1M)                    0.15       0.51 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][2]/D (SDFFRQX2M)       0.00       0.51 r
+  data arrival time                                                  0.51
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][2]/CK (SDFFRQX2M)      0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.57
+
+
+  Startpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][1]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][1]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][1]/CK (SDFFRQX2M)      0.00       0.00 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][1]/Q (SDFFRQX2M)       0.37       0.37 r
+  ASYNC_FIFO_U5/U1/U157/Y (OAI2BB2X1M)                    0.15       0.51 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][1]/D (SDFFRQX2M)       0.00       0.51 r
+  data arrival time                                                  0.51
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][1]/CK (SDFFRQX2M)      0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.57
+
+
+  Startpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][0]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][0]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][0]/CK (SDFFRQX2M)      0.00       0.00 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][0]/Q (SDFFRQX2M)       0.37       0.37 r
+  ASYNC_FIFO_U5/U1/U156/Y (OAI2BB2X1M)                    0.15       0.51 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][0]/D (SDFFRQX2M)       0.00       0.51 r
+  data arrival time                                                  0.51
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[1][0]/CK (SDFFRQX2M)      0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.57
+
+
+  Startpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][7]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][7]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][7]/CK (SDFFRQX2M)      0.00       0.00 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][7]/Q (SDFFRQX2M)       0.37       0.37 r
+  ASYNC_FIFO_U5/U1/U124/Y (OAI2BB2X1M)                    0.15       0.51 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][7]/D (SDFFRQX2M)       0.00       0.51 r
+  data arrival time                                                  0.51
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][7]/CK (SDFFRQX2M)      0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.57
+
+
+  Startpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][6]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][6]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][6]/CK (SDFFRQX2M)      0.00       0.00 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][6]/Q (SDFFRQX2M)       0.37       0.37 r
+  ASYNC_FIFO_U5/U1/U123/Y (OAI2BB2X1M)                    0.15       0.51 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][6]/D (SDFFRQX2M)       0.00       0.51 r
+  data arrival time                                                  0.51
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][6]/CK (SDFFRQX2M)      0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.57
+
+
+  Startpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][5]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][5]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][5]/CK (SDFFRQX2M)      0.00       0.00 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][5]/Q (SDFFRQX2M)       0.37       0.37 r
+  ASYNC_FIFO_U5/U1/U122/Y (OAI2BB2X1M)                    0.15       0.51 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][5]/D (SDFFRQX2M)       0.00       0.51 r
+  data arrival time                                                  0.51
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][5]/CK (SDFFRQX2M)      0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.57
+
+
+  Startpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][4]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][4]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][4]/CK (SDFFRQX2M)      0.00       0.00 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][4]/Q (SDFFRQX2M)       0.37       0.37 r
+  ASYNC_FIFO_U5/U1/U121/Y (OAI2BB2X1M)                    0.15       0.51 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][4]/D (SDFFRQX2M)       0.00       0.51 r
+  data arrival time                                                  0.51
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][4]/CK (SDFFRQX2M)      0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.57
+
+
+  Startpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][3]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][3]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][3]/CK (SDFFRQX2M)      0.00       0.00 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][3]/Q (SDFFRQX2M)       0.37       0.37 r
+  ASYNC_FIFO_U5/U1/U120/Y (OAI2BB2X1M)                    0.15       0.51 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][3]/D (SDFFRQX2M)       0.00       0.51 r
+  data arrival time                                                  0.51
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][3]/CK (SDFFRQX2M)      0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.57
+
+
+  Startpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][2]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][2]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][2]/CK (SDFFRQX2M)      0.00       0.00 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][2]/Q (SDFFRQX2M)       0.37       0.37 r
+  ASYNC_FIFO_U5/U1/U119/Y (OAI2BB2X1M)                    0.15       0.51 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][2]/D (SDFFRQX2M)       0.00       0.51 r
+  data arrival time                                                  0.51
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][2]/CK (SDFFRQX2M)      0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.57
+
+
+  Startpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][1]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][1]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][1]/CK (SDFFRQX2M)      0.00       0.00 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][1]/Q (SDFFRQX2M)       0.37       0.37 r
+  ASYNC_FIFO_U5/U1/U118/Y (OAI2BB2X1M)                    0.15       0.51 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][1]/D (SDFFRQX2M)       0.00       0.51 r
+  data arrival time                                                  0.51
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][1]/CK (SDFFRQX2M)      0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.57
+
+
+  Startpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][0]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][0]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][0]/CK (SDFFRQX2M)      0.00       0.00 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][0]/Q (SDFFRQX2M)       0.37       0.37 r
+  ASYNC_FIFO_U5/U1/U117/Y (OAI2BB2X1M)                    0.15       0.51 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][0]/D (SDFFRQX2M)       0.00       0.51 r
+  data arrival time                                                  0.51
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[4][0]/CK (SDFFRQX2M)      0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.57
+
+
+  Startpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[5][0]
+              (rising edge-triggered flip-flop clocked by scan_clk)
+  Endpoint: ASYNC_FIFO_U5/U1/FIFO_MEM_reg[5][0]
+            (rising edge-triggered flip-flop clocked by scan_clk)
+  Path Group: scan_clk
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[5][0]/CK (SDFFRQX2M)      0.00       0.00 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[5][0]/Q (SDFFRQX2M)       0.37       0.37 r
+  ASYNC_FIFO_U5/U1/U101/Y (OAI2BB2X1M)                    0.15       0.51 r
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[5][0]/D (SDFFRQX2M)       0.00       0.51 r
+  data arrival time                                                  0.51
+
+  clock scan_clk (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.10       0.10
+  ASYNC_FIFO_U5/U1/FIFO_MEM_reg[5][0]/CK (SDFFRQX2M)      0.00       0.10 r
+  library hold time                                      -0.16      -0.06
+  data required time                                                -0.06
+  --------------------------------------------------------------------------
+  data required time                                                -0.06
+  data arrival time                                                 -0.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.57
+
+
+1

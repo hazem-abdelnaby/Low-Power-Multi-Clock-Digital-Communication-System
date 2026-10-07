@@ -1,0 +1,45 @@
+ 
+****************************************
+Report : DFT signals
+Design : System_TOP
+Version: O-2018.06-SP1
+Date   : Wed Oct  7 01:12:13 2026
+****************************************
+
+========================================
+TEST MODE: all_dft
+VIEW     : Specification
+========================================
+Port               SignalType          Active    Hookup    Timing    Usage
+----------         ----------          ------    ------    ------    -----
+test_mode          TestMode            1         -         -         -
+SE                 ScanEnable          1         -         -         Scan
+SI[0]              ScanDataIn          -         -         Delay 0.0 -
+SI[1]              ScanDataIn          -         -         Delay 0.0 -
+SI[2]              ScanDataIn          -         -         Delay 0.0 -
+SI[3]              ScanDataIn          -         -         Delay 0.0 -
+SO[0]              ScanDataOut         -         -         -         -
+SO[1]              ScanDataOut         -         -         -         -
+SO[2]              ScanDataOut         -         -         -         -
+SO[3]              ScanDataOut         -         -         -         -
+
+ 
+****************************************
+Report : DFT signals
+Design : System_TOP
+Version: O-2018.06-SP1
+Date   : Wed Oct  7 01:12:13 2026
+****************************************
+
+========================================
+TEST MODE: all_dft
+VIEW     : Existing DFT
+========================================
+Port               SignalType          Active    Hookup    Timing    Usage
+----------         ----------          ------    ------    ------    -----
+test_mode          Constant            1         -
+scan_clk           ScanMasterClock     1         -         P 100.0 R 45.0 F 55.0
+scan_clk           MasterClock         1         -         P 100.0 R 45.0 F 55.0
+scan_rst           Reset               0         -         P 100.0 R 55.0 F 45.0
+
+1

@@ -1,0 +1,33 @@
+ 
+****************************************
+Report : clocks
+Design : System_TOP
+Version: O-2018.06-SP1
+Date   : Wed Oct  7 01:12:30 2026
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+REF_CLK         20.00   {0 10}                        {REF_CLK}
+RX_CLK         271.27   {0 135.633}         G         {Domain_2_TOP_U1/ClkDiv_U2_RX/o_div_clk}
+TX_CLK        8680.54   {0 4340.27}         G         {Domain_2_TOP_U1/ClkDiv_U1_TX/o_div_clk}
+UART_CLK       271.27   {0 135.633}                   {UART_CLK}
+scan_clk       100.00   {0 50}                        {scan_clk}
+--------------------------------------------------------------------------------
+
+Generated     Master         Generated      Master         Waveform
+Clock         Source         Source         Clock          Modification
+--------------------------------------------------------------------------------
+RX_CLK        UART_CLK       {Domain_2_TOP_U1/ClkDiv_U2_RX/o_div_clk}
+                                            UART_CLK       divide_by(1)
+TX_CLK        UART_CLK       {Domain_2_TOP_U1/ClkDiv_U1_TX/o_div_clk}
+                                            UART_CLK       divide_by(32)
+--------------------------------------------------------------------------------
+1

@@ -1,0 +1,89 @@
+ 
+****************************************
+Report : area
+Design : System_TOP
+Version: O-2018.06-SP1
+Date   : Wed Oct  7 01:12:29 2026
+****************************************
+
+Library(s) Used:
+
+    scmetro_tsmc_cl013g_rvt_ss_1p08v_125c (File: /home/ICer/Project/System/std_cells/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db)
+
+Number of ports:                          926
+Number of nets:                          3032
+Number of cells:                         2065
+Number of combinational cells:           1597
+Number of sequential cells:               425
+Number of macros/black boxes:               0
+Number of buf/inv:                        297
+Number of references:                      12
+
+Combinational area:              13149.622720
+Buf/Inv area:                     1123.748525
+Noncombinational area:           13203.751118
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 26353.373838
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  -----------------------
+System_TOP                        26353.3738    100.0     41.1845      0.0000  0.0000  System_TOP
+ASYNC_FIFO_U5                      4849.1809     18.4     20.0039      0.0000  0.0000  ASYNC_FIFO_test_1
+ASYNC_FIFO_U5/U1                   3435.9641     13.0   1063.7368   2372.2273  0.0000  FIFO_MEM_CNTRL_test_1
+ASYNC_FIFO_U5/U2                    427.1421      1.6    163.5613    263.5808  0.0000  FIFO_WR_test_1
+ASYNC_FIFO_U5/U3                    431.8489      1.6    168.2681    263.5808  0.0000  FIFO_RD_test_1
+ASYNC_FIFO_U5/U4                    534.2218      2.0      7.0602    527.1616  0.0000  DF_SYNC_test_1
+DATA_SYNC_U2                        480.0936      1.8     84.7224    395.3712  0.0000  DATA_SYNC_test_1
+Domain_1_TOP_U0                   14653.4454     55.6     12.9437      0.0000  0.0000  Domain_1_TOP_test_1
+Domain_1_TOP_U0/ALU_U1             5678.7543     21.5   1030.7892    560.1092  0.0000  ALU_test_1
+Domain_1_TOP_U0/ALU_U1/add_23       231.8099      0.9    231.8099      0.0000  0.0000  ALU_DW01_add_0
+Domain_1_TOP_U0/ALU_U1/div_26      1434.3973      5.4   1434.3973      0.0000  0.0000  ALU_DW_div_uns_0
+Domain_1_TOP_U0/ALU_U1/mult_25     2155.7144      8.2   1914.4909      0.0000  0.0000  ALU_DW02_mult_0
+Domain_1_TOP_U0/ALU_U1/mult_25/FS_1
+                                    241.2235      0.9    241.2235      0.0000  0.0000  ALU_DW01_add_1
+Domain_1_TOP_U0/ALU_U1/sub_24       265.9342      1.0    265.9342      0.0000  0.0000  ALU_DW01_sub_0
+Domain_1_TOP_U0/Clock_Gating_U0      21.1806      0.1      0.0000     21.1806  0.0000  Clock_Gating
+Domain_1_TOP_U0/RegFile_U2         6715.4271     25.5   2203.9592   4511.4680  0.0000  RegFile_test_1
+Domain_1_TOP_U0/SYS_CTRL_U3        2225.1397      8.4    967.2474   1257.8922  0.0000  SYS_CTRL_test_1
+Domain_2_TOP_U1                    6104.7198     23.2     10.5903      0.0000  0.0000  Domain_2_TOP_test_1
+Domain_2_TOP_U1/ClkDiv_U1_TX       1100.2145      4.2    663.6588    329.4760  0.0000  ClkDiv_test_0
+Domain_2_TOP_U1/ClkDiv_U1_TX/add_58
+                                    107.0797      0.4    107.0797      0.0000  0.0000  ClkDiv_0_DW01_inc_0
+Domain_2_TOP_U1/ClkDiv_U2_RX       1100.2145      4.2    663.6588    329.4760  0.0000  ClkDiv_test_1
+Domain_2_TOP_U1/ClkDiv_U2_RX/add_58
+                                    107.0797      0.4    107.0797      0.0000  0.0000  ClkDiv_1_DW01_inc_0
+Domain_2_TOP_U1/MUX_2X1_U5           11.7670      0.0     11.7670      0.0000  0.0000  MUX_2X1_2
+Domain_2_TOP_U1/MUX_2X1_U6           11.7670      0.0     11.7670      0.0000  0.0000  MUX_2X1_1
+Domain_2_TOP_U1/PULSE_GEN_U3         71.7787      0.3      5.8835     65.8952  0.0000  PULSE_GEN_test_1
+Domain_2_TOP_U1/UART_U0            3743.0828     14.2      7.0602      0.0000  0.0000  UART_TOP_test_1
+Domain_2_TOP_U1/UART_U0/U0         1423.8070      5.4      7.0602      0.0000  0.0000  Top_TX_test_1
+Domain_2_TOP_U1/UART_U0/U0/U1       182.3885      0.7     83.5457     98.8428  0.0000  FSM_TX_test_1
+Domain_2_TOP_U1/UART_U0/U0/U2       703.6666      2.7    242.4002    461.2664  0.0000  serializer_TX_test_1
+Domain_2_TOP_U1/UART_U0/U0/U3        52.9515      0.2     21.1806     31.7709  0.0000  MUX_TX_test_1
+Domain_2_TOP_U1/UART_U0/U0/U4       477.7402      1.8    181.2118    296.5284  0.0000  Parity_Calc_TX_test_1
+Domain_2_TOP_U1/UART_U0/U1         2312.2156      8.8      8.2369      0.0000  0.0000  TOP_RX_test_1
+Domain_2_TOP_U1/UART_U0/U1/U1       288.2915      1.1    189.4487     98.8428  0.0000  FSM_RX_test_1
+Domain_2_TOP_U1/UART_U0/U1/U2       305.9420      1.2    172.9749    132.9671  0.0000  data_sampling_test_1
+Domain_2_TOP_U1/UART_U0/U1/U3       886.0551      3.4    227.1031    658.9520  0.0000  desrializer_test_1
+Domain_2_TOP_U1/UART_U0/U1/U4       703.6666      2.7    374.1906    329.4760  0.0000  edge_bit_counter_test_1
+Domain_2_TOP_U1/UART_U0/U1/U5         5.8835      0.0      5.8835      0.0000  0.0000  Stop_Checker_RX
+Domain_2_TOP_U1/UART_U0/U1/U6       108.2564      0.4    108.2564      0.0000  0.0000  Parity_Checker
+Domain_2_TOP_U1/UART_U0/U1/U7         5.8835      0.0      5.8835      0.0000  0.0000  Start_Checker
+Domain_2_TOP_U1/prescale_MUX_U4      55.3049      0.2     55.3049      0.0000  0.0000  prescale_MUX
+MUX_2X1_U6                           15.2971      0.1     15.2971      0.0000  0.0000  MUX_2X1_0
+MUX_2X1_U7                           11.7670      0.0     11.7670      0.0000  0.0000  MUX_2X1_3
+RST_SYNC_U3                          98.8428      0.4      0.0000     98.8428  0.0000  RST_SYNC_0
+RST_SYNC_U4                          98.8428      0.4      0.0000     98.8428  0.0000  RST_SYNC_1
+--------------------------------  ----------  -------  ----------  ----------  ------  -----------------------
+Total                                                  13149.6227  13203.7511  0.0000
+
+1
