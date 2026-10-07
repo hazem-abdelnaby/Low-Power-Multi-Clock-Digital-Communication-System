@@ -1,0 +1,274 @@
+read_file -type verilog {../rtl/ALU.v ../rtl/ASYNC_FIFO.v ../rtl/ClkDiv.v ../rtl/Clock_Gating.v ../rtl/data_sampling.v ../rtl/DATA_SYNC.v ../rtl/deserializer.v ../rtl/DF_SYNC.v ../rtl/Domain_1_TOP.v ../rtl/Domain_2_TOP.v ../rtl/edge_bit_counter.v ../rtl/FIFO_MEM_CNTRL.v ../rtl/FIFO_RD.v ../rtl/FIFO_WR.v ../rtl/FSM_RX.v ../rtl/FSM_TX.v ../rtl/MUX_TX.v ../rtl/Parity_Calc_TX.v ../rtl/Parity_Checker_RX.v ../rtl/prescale_MUX.v ../rtl/PULSE_GEN.v ../rtl/RegFile.v ../rtl/RST_SYNC.v ../rtl/serializer_TX.v ../rtl/Start_Checker.v ../rtl/Stop_Checker_RX.v ../rtl/SYS_CTRL.v ../rtl/System_TOP.v ../rtl/TOP_RX.v ../rtl/TOP_TX.v ../rtl/UART_TOP.v}
+read_file -type gateslib ../../../Labs/Synthesis/Lab_Syn_1.0/std_cells/scmetro_tsmc_cl013g_rvt_tt_1p2v_25c.lib
+read_file -type sgdc System_TOP.sgdc
+
+
+
+current_goal Design_Read -alltop
+
+
+link_design -force
+
+
+
+current_goal cdc/cdc_setup_check -alltop
+run_goal
+
+
+
+
+run_goal
+
+read_file -type awl ./spyglass-1/cdc/cdc_setup_check/spyglass-1_waiver_file.awl
+set_goal_option default_waiver_file ./spyglass-1/cdc/cdc_setup_check/spyglass-1_waiver_file.awl
+
+set _sg_current_default_waiver_file ""; set _sg_current_default_waiver_file [get_goal_option default_waiver_file]
+waive -rule Setup_port01 -comment {Created by ICer on 07-Oct-2026 00:20:41}
+if {$_sg_current_default_waiver_file == {} || $_sg_current_default_waiver_file == {{}}} {remove_goal_option default_waiver_file } else { set_goal_option default_waiver_file $_sg_current_default_waiver_file}
+
+
+
+
+
+
+save_waiver
+
+
+current_goal cdc/clock_reset_integrity -alltop
+run_goal
+
+
+
+
+read_file -type awl ./spyglass-1/cdc/clock_reset_integrity/spyglass-1_waiver_file.awl
+set_goal_option default_waiver_file ./spyglass-1/cdc/clock_reset_integrity/spyglass-1_waiver_file.awl
+
+set _sg_current_default_waiver_file ""; set _sg_current_default_waiver_file [get_goal_option default_waiver_file]
+waive -rule SGDCWRN_115 -comment {Created by ICer on 07-Oct-2026 00:21:30}
+if {$_sg_current_default_waiver_file == {} || $_sg_current_default_waiver_file == {{}}} {remove_goal_option default_waiver_file } else { set_goal_option default_waiver_file $_sg_current_default_waiver_file}
+
+
+
+
+
+
+save_waiver
+
+
+current_goal cdc/cdc_verify_struct -alltop
+run_goal
+
+
+
+
+gui_select_message -rule Ac_glitch03 -msg {Destination flop 'System_TOP.DATA_SYNC_U2.stage[0]' clocked by 'System_TOP.REF_CLK' can glitch (1 source(s), 1 domain(s)). Reason :'Sources from same domain in fanin'}
+gui_open_schematic -is
+read_file -type awl ./spyglass-1/cdc/cdc_verify_struct/spyglass-1_waiver_file.awl
+set_goal_option default_waiver_file ./spyglass-1/cdc/cdc_verify_struct/spyglass-1_waiver_file.awl
+
+set _sg_current_default_waiver_file ""; set _sg_current_default_waiver_file [get_goal_option default_waiver_file]
+waive -rule Ac_glitch03 -comment {Created by ICer on 07-Oct-2026 00:22:48}
+if {$_sg_current_default_waiver_file == {} || $_sg_current_default_waiver_file == {{}}} {remove_goal_option default_waiver_file } else { set_goal_option default_waiver_file $_sg_current_default_waiver_file}
+
+
+
+
+
+
+
+
+
+
+set _sg_current_default_waiver_file ""; set _sg_current_default_waiver_file [get_goal_option default_waiver_file]
+waive -rule Setup_port01 -comment {Created by ICer on 07-Oct-2026 00:22:59}
+if {$_sg_current_default_waiver_file == {} || $_sg_current_default_waiver_file == {{}}} {remove_goal_option default_waiver_file } else { set_goal_option default_waiver_file $_sg_current_default_waiver_file}
+
+
+
+
+
+
+save_waiver
+
+
+
+gui_select_message -rule Ac_conv01 -msg {5 synchronizers (System_TOP.ASYNC_FIFO_U5.U4.rptr_sync1[3:0],System_TOP.DATA_SYNC_U2.stage[0]) converge on MUX 'System_TOP.Domain_1_TOP_U0.SYS_CTRL_U3.nxt_state[3]'}
+gui_open_schematic -is
+
+set _sg_current_default_waiver_file ""; set _sg_current_default_waiver_file [get_goal_option default_waiver_file]
+waive -rule Ac_conv01 -comment {Created by ICer on 07-Oct-2026 00:23:47}
+if {$_sg_current_default_waiver_file == {} || $_sg_current_default_waiver_file == {{}}} {remove_goal_option default_waiver_file } else { set_goal_option default_waiver_file $_sg_current_default_waiver_file}
+
+
+
+save_waiver
+
+
+
+gui_select_message -rule Ac_conv02 -msg {4 synchronizers (System_TOP.ASYNC_FIFO_U5.U4.rptr_sync1[3:0]) converge on combinational gate 'System_TOP.FULL'. Gray encoding check: 'DISABLED'}
+gui_open_schematic -is
+
+set _sg_current_default_waiver_file ""; set _sg_current_default_waiver_file [get_goal_option default_waiver_file]
+waive -rule Ac_conv02 -comment {Created by ICer on 07-Oct-2026 00:24:21}
+if {$_sg_current_default_waiver_file == {} || $_sg_current_default_waiver_file == {{}}} {remove_goal_option default_waiver_file } else { set_goal_option default_waiver_file $_sg_current_default_waiver_file}
+
+
+
+save_waiver
+
+
+
+
+
+current_goal cdc/cdc_verify -alltop
+run_goal
+
+
+
+
+read_file -type awl ./spyglass-1/cdc/cdc_verify/spyglass-1_waiver_file.awl
+set_goal_option default_waiver_file ./spyglass-1/cdc/cdc_verify/spyglass-1_waiver_file.awl
+
+set _sg_current_default_waiver_file ""; set _sg_current_default_waiver_file [get_goal_option default_waiver_file]
+waive -rule Setup_port01 -comment {Created by ICer on 07-Oct-2026 00:25:29}
+if {$_sg_current_default_waiver_file == {} || $_sg_current_default_waiver_file == {{}}} {remove_goal_option default_waiver_file } else { set_goal_option default_waiver_file $_sg_current_default_waiver_file}
+
+
+
+save_waiver
+
+
+
+
+set _sg_current_default_waiver_file ""; set _sg_current_default_waiver_file [get_goal_option default_waiver_file]
+waive -rule Ac_cdc01a -comment {Created by ICer on 07-Oct-2026 00:25:56}
+if {$_sg_current_default_waiver_file == {} || $_sg_current_default_waiver_file == {{}}} {remove_goal_option default_waiver_file } else { set_goal_option default_waiver_file $_sg_current_default_waiver_file}
+
+
+
+save_waiver
+
+
+
+
+set _sg_current_default_waiver_file ""; set _sg_current_default_waiver_file [get_goal_option default_waiver_file]
+waive -rule Ac_conv01 -comment {Created by ICer on 07-Oct-2026 00:26:04}
+if {$_sg_current_default_waiver_file == {} || $_sg_current_default_waiver_file == {{}}} {remove_goal_option default_waiver_file } else { set_goal_option default_waiver_file $_sg_current_default_waiver_file}
+
+
+
+save_waiver
+
+
+
+
+set _sg_current_default_waiver_file ""; set _sg_current_default_waiver_file [get_goal_option default_waiver_file]
+waive -rule Ac_conv02 -comment {Created by ICer on 07-Oct-2026 00:26:13}
+if {$_sg_current_default_waiver_file == {} || $_sg_current_default_waiver_file == {{}}} {remove_goal_option default_waiver_file } else { set_goal_option default_waiver_file $_sg_current_default_waiver_file}
+
+
+
+save_waiver
+
+
+
+
+set _sg_current_default_waiver_file ""; set _sg_current_default_waiver_file [get_goal_option default_waiver_file]
+waive -rule Ac_datahold01a -comment {Created by ICer on 07-Oct-2026 00:26:28}
+if {$_sg_current_default_waiver_file == {} || $_sg_current_default_waiver_file == {{}}} {remove_goal_option default_waiver_file } else { set_goal_option default_waiver_file $_sg_current_default_waiver_file}
+
+
+
+save_waiver
+
+
+
+
+set _sg_current_default_waiver_file ""; set _sg_current_default_waiver_file [get_goal_option default_waiver_file]
+waive -rule Ac_glitch03 -comment {Created by ICer on 07-Oct-2026 00:26:40}
+if {$_sg_current_default_waiver_file == {} || $_sg_current_default_waiver_file == {{}}} {remove_goal_option default_waiver_file } else { set_goal_option default_waiver_file $_sg_current_default_waiver_file}
+
+
+
+save_waiver
+
+
+
+
+
+current_goal cdc/cdc_abstract -alltop
+run_goal
+
+
+
+
+read_file -type awl ./spyglass-1/cdc/cdc_abstract/spyglass-1_waiver_file.awl
+set_goal_option default_waiver_file ./spyglass-1/cdc/cdc_abstract/spyglass-1_waiver_file.awl
+
+set _sg_current_default_waiver_file ""; set _sg_current_default_waiver_file [get_goal_option default_waiver_file]
+waive -rule Setup_port01 -comment {Created by ICer on 07-Oct-2026 00:27:20}
+if {$_sg_current_default_waiver_file == {} || $_sg_current_default_waiver_file == {{}}} {remove_goal_option default_waiver_file } else { set_goal_option default_waiver_file $_sg_current_default_waiver_file}
+
+
+
+save_waiver
+
+
+
+
+
+current_goal cdc/cdc_verify_jitter -alltop
+run_goal
+
+
+
+current_goal cdc/cdc_abstract -alltop
+
+
+
+set _sg_current_default_waiver_file ""; set _sg_current_default_waiver_file [get_goal_option default_waiver_file]
+waive -rule SGDCWRN_115 -comment {Created by ICer on 07-Oct-2026 00:27:48}
+if {$_sg_current_default_waiver_file == {} || $_sg_current_default_waiver_file == {{}}} {remove_goal_option default_waiver_file } else { set_goal_option default_waiver_file $_sg_current_default_waiver_file}
+
+
+
+save_waiver
+
+
+
+
+
+current_goal rdc/rdc_verify_struct -alltop
+run_goal
+
+
+
+
+read_file -type awl ./spyglass-1/rdc/rdc_verify_struct/spyglass-1_waiver_file.awl
+set_goal_option default_waiver_file ./spyglass-1/rdc/rdc_verify_struct/spyglass-1_waiver_file.awl
+
+set _sg_current_default_waiver_file ""; set _sg_current_default_waiver_file [get_goal_option default_waiver_file]
+waive -rule Setup_port01 -comment {Created by ICer on 07-Oct-2026 00:28:21}
+if {$_sg_current_default_waiver_file == {} || $_sg_current_default_waiver_file == {{}}} {remove_goal_option default_waiver_file } else { set_goal_option default_waiver_file $_sg_current_default_waiver_file}
+
+
+
+save_waiver
+
+
+
+
+set _sg_current_default_waiver_file ""; set _sg_current_default_waiver_file [get_goal_option default_waiver_file]
+waive -rule SGDCWRN_115 -comment {Created by ICer on 07-Oct-2026 00:28:33}
+if {$_sg_current_default_waiver_file == {} || $_sg_current_default_waiver_file == {{}}} {remove_goal_option default_waiver_file } else { set_goal_option default_waiver_file $_sg_current_default_waiver_file}
+
+
+
+save_waiver
+
+
+
+save_project -force /home/ICer/Project/System/spyglass/spyglass.prj
+save_project
+gui_exit
+gui_exit

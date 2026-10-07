@@ -1,0 +1,68 @@
+current_design System_TOP
+
+sdc_data -file ./System_TOP.sdc
+
+####################################################################################
+           #########################################################
+                  #### Section 1 : Clock Definition ####
+           #########################################################
+#################################################################################### 
+
+#REF_CLK period = 20 ns with clock domain d0
+clock -name REF_CLK -period 20 -waveform {0 10} -domain d0
+
+
+#UART_CLK period = 217.3 ns with clock domain d1
+clock -name UART_CLK -period 217.3 -waveform {0 108.65} -domain d1
+
+clock -name System_TOP.Domain_2_TOP_U1.TX_CLK -period 8680 -waveform {0 4340} -domain d1
+clock -name System_TOP.Domain_2_TOP_U1.RX_CLK -period 271.267 -waveform {0 135.633} -domain d1
+
+####################################################################################
+           #########################################################
+                  #### Section 2 : Reset Definition ####
+           #########################################################
+####################################################################################
+
+#Active Low Async Reset (RST)
+reset -name RST_N -value 0 -async
+
+
+####################################################################################
+           #########################################################
+             #### Section 3 : set input/output clock domains  ####
+           #########################################################
+####################################################################################
+
+abstract_port -ports UART_RX_IN  -clock UART_CLK  
+
+
+####################################################################################
+             #### Section 4 : Quasi static signals  ####
+####################################################################################
+
+quasi_static -name System_TOP.Domain_1_TOP_U0.RegFile_U2.REG2
+quasi_static -name System_TOP.Domain_1_TOP_U0.RegFile_U2.REG3
+   
+ 
+####################################################################################
+           #########################################################
+             #### Section 5 : DATA/RESET Synchronizers  ####
+           #########################################################
+####################################################################################
+
+####################################################################################
+             #### Section 6 : ASYNC FIFO ####
+####################################################################################
+
+#fifo -rd_data ASYNC_FIFO_U5.U1.RD_DATA \
+#    -wr_data ASYNC_FIFO_U5.U1.WR_DATA
+
+cdc_false_path -from {System_TOP.ASYNC_FIFO_U5.U1.FIFO_MEM[0]} -from_type data -to {System_TOP.RD_DATA[0]} -to_type data
+cdc_false_path -from {System_TOP.ASYNC_FIFO_U5.U1.FIFO_MEM[1]} -from_type data -to {System_TOP.RD_DATA[1]} -to_type data
+cdc_false_path -from {System_TOP.ASYNC_FIFO_U5.U1.FIFO_MEM[2]} -from_type data -to {System_TOP.RD_DATA[2]} -to_type data
+cdc_false_path -from {System_TOP.ASYNC_FIFO_U5.U1.FIFO_MEM[3]} -from_type data -to {System_TOP.RD_DATA[3]} -to_type data
+cdc_false_path -from {System_TOP.ASYNC_FIFO_U5.U1.FIFO_MEM[4]} -from_type data -to {System_TOP.RD_DATA[4]} -to_type data
+cdc_false_path -from {System_TOP.ASYNC_FIFO_U5.U1.FIFO_MEM[5]} -from_type data -to {System_TOP.RD_DATA[5]} -to_type data
+cdc_false_path -from {System_TOP.ASYNC_FIFO_U5.U1.FIFO_MEM[6]} -from_type data -to {System_TOP.RD_DATA[6]} -to_type data
+cdc_false_path -from {System_TOP.ASYNC_FIFO_U5.U1.FIFO_MEM[7]} -from_type data -to {System_TOP.RD_DATA[7]} -to_type data
