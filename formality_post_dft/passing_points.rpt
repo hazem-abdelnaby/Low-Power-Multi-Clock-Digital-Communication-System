@@ -1,0 +1,444 @@
+**************************************************
+Report         : passing_points
+
+Reference      : Ref:/WORK/System_TOP
+Implementation : Imp:/WORK/System_TOP
+Version        : L-2016.03-SP1
+Date           : Wed Oct  7 00:54:38 2026
+**************************************************
+
+136 Passing compare points:
+
+  Ref  DFF        Ref:/WORK/System_TOP/ASYNC_FIFO_U5/U2/wptr_bi_reg[0]
+  Impl DFF        Imp:/WORK/System_TOP/ASYNC_FIFO_U5/U2/wptr_bi_reg[0]
+
+  Ref  DFF        Ref:/WORK/System_TOP/ASYNC_FIFO_U5/U2/wptr_bi_reg[1]
+  Impl DFF        Imp:/WORK/System_TOP/ASYNC_FIFO_U5/U2/wptr_bi_reg[1]
+
+  Ref  DFF        Ref:/WORK/System_TOP/ASYNC_FIFO_U5/U2/wptr_bi_reg[2]
+  Impl DFF        Imp:/WORK/System_TOP/ASYNC_FIFO_U5/U2/wptr_bi_reg[2]
+
+  Ref  DFF        Ref:/WORK/System_TOP/ASYNC_FIFO_U5/U2/wptr_bi_reg[3]
+  Impl DFF        Imp:/WORK/System_TOP/ASYNC_FIFO_U5/U2/wptr_bi_reg[3]
+
+  Ref  DFF        Ref:/WORK/System_TOP/ASYNC_FIFO_U5/U2/wptr_reg[0]
+  Impl DFF        Imp:/WORK/System_TOP/ASYNC_FIFO_U5/U2/wptr_reg[0]
+
+  Ref  DFF        Ref:/WORK/System_TOP/ASYNC_FIFO_U5/U2/wptr_reg[1]
+  Impl DFF        Imp:/WORK/System_TOP/ASYNC_FIFO_U5/U2/wptr_reg[1]
+
+  Ref  DFF        Ref:/WORK/System_TOP/ASYNC_FIFO_U5/U2/wptr_reg[2]
+  Impl DFF        Imp:/WORK/System_TOP/ASYNC_FIFO_U5/U2/wptr_reg[2]
+
+  Ref  DFF        Ref:/WORK/System_TOP/ASYNC_FIFO_U5/U2/wptr_reg[3]
+  Impl DFF        Imp:/WORK/System_TOP/ASYNC_FIFO_U5/U2/wptr_reg[3]
+
+  Ref  DFF        Ref:/WORK/System_TOP/ASYNC_FIFO_U5/U3/rptr_bi_reg[0]
+  Impl DFF        Imp:/WORK/System_TOP/ASYNC_FIFO_U5/U3/rptr_bi_reg[0]
+
+  Ref  DFF        Ref:/WORK/System_TOP/ASYNC_FIFO_U5/U3/rptr_bi_reg[1]
+  Impl DFF        Imp:/WORK/System_TOP/ASYNC_FIFO_U5/U3/rptr_bi_reg[1]
+
+  Ref  DFF        Ref:/WORK/System_TOP/ASYNC_FIFO_U5/U3/rptr_bi_reg[2]
+  Impl DFF        Imp:/WORK/System_TOP/ASYNC_FIFO_U5/U3/rptr_bi_reg[2]
+
+  Ref  DFF        Ref:/WORK/System_TOP/ASYNC_FIFO_U5/U3/rptr_bi_reg[3]
+  Impl DFF        Imp:/WORK/System_TOP/ASYNC_FIFO_U5/U3/rptr_bi_reg[3]
+
+  Ref  DFF        Ref:/WORK/System_TOP/ASYNC_FIFO_U5/U3/rptr_reg[0]
+  Impl DFF        Imp:/WORK/System_TOP/ASYNC_FIFO_U5/U3/rptr_reg[0]
+
+  Ref  DFF        Ref:/WORK/System_TOP/ASYNC_FIFO_U5/U3/rptr_reg[1]
+  Impl DFF        Imp:/WORK/System_TOP/ASYNC_FIFO_U5/U3/rptr_reg[1]
+
+  Ref  DFF        Ref:/WORK/System_TOP/ASYNC_FIFO_U5/U3/rptr_reg[2]
+  Impl DFF        Imp:/WORK/System_TOP/ASYNC_FIFO_U5/U3/rptr_reg[2]
+
+  Ref  DFF        Ref:/WORK/System_TOP/ASYNC_FIFO_U5/U3/rptr_reg[3]
+  Impl DFF        Imp:/WORK/System_TOP/ASYNC_FIFO_U5/U3/rptr_reg[3]
+
+  Ref  DFF        Ref:/WORK/System_TOP/ASYNC_FIFO_U5/U4/rptr_sync1_reg[0]
+  Impl DFF        Imp:/WORK/System_TOP/ASYNC_FIFO_U5/U4/rptr_sync1_reg[0]
+
+  Ref  DFF        Ref:/WORK/System_TOP/ASYNC_FIFO_U5/U4/rptr_sync1_reg[1]
+  Impl DFF        Imp:/WORK/System_TOP/ASYNC_FIFO_U5/U4/rptr_sync1_reg[1]
+
+  Ref  DFF        Ref:/WORK/System_TOP/ASYNC_FIFO_U5/U4/rptr_sync1_reg[2]
+  Impl DFF        Imp:/WORK/System_TOP/ASYNC_FIFO_U5/U4/rptr_sync1_reg[2]
+
+  Ref  DFF        Ref:/WORK/System_TOP/ASYNC_FIFO_U5/U4/rptr_sync1_reg[3]
+  Impl DFF        Imp:/WORK/System_TOP/ASYNC_FIFO_U5/U4/rptr_sync1_reg[3]
+
+  Ref  DFF        Ref:/WORK/System_TOP/ASYNC_FIFO_U5/U4/rptr_sync_reg[0]
+  Impl DFF        Imp:/WORK/System_TOP/ASYNC_FIFO_U5/U4/rptr_sync_reg[0]
+
+  Ref  DFF        Ref:/WORK/System_TOP/ASYNC_FIFO_U5/U4/rptr_sync_reg[1]
+  Impl DFF        Imp:/WORK/System_TOP/ASYNC_FIFO_U5/U4/rptr_sync_reg[1]
+
+  Ref  DFF        Ref:/WORK/System_TOP/ASYNC_FIFO_U5/U4/rptr_sync_reg[2]
+  Impl DFF        Imp:/WORK/System_TOP/ASYNC_FIFO_U5/U4/rptr_sync_reg[2]
+
+  Ref  DFF        Ref:/WORK/System_TOP/ASYNC_FIFO_U5/U4/rptr_sync_reg[3]
+  Impl DFF        Imp:/WORK/System_TOP/ASYNC_FIFO_U5/U4/rptr_sync_reg[3]
+
+  Ref  DFF        Ref:/WORK/System_TOP/ASYNC_FIFO_U5/U4/wptr_sync1_reg[0]
+  Impl DFF        Imp:/WORK/System_TOP/ASYNC_FIFO_U5/U4/wptr_sync1_reg[0]
+
+  Ref  DFF        Ref:/WORK/System_TOP/ASYNC_FIFO_U5/U4/wptr_sync1_reg[1]
+  Impl DFF        Imp:/WORK/System_TOP/ASYNC_FIFO_U5/U4/wptr_sync1_reg[1]
+
+  Ref  DFF        Ref:/WORK/System_TOP/ASYNC_FIFO_U5/U4/wptr_sync1_reg[2]
+  Impl DFF        Imp:/WORK/System_TOP/ASYNC_FIFO_U5/U4/wptr_sync1_reg[2]
+
+  Ref  DFF        Ref:/WORK/System_TOP/ASYNC_FIFO_U5/U4/wptr_sync1_reg[3]
+  Impl DFF        Imp:/WORK/System_TOP/ASYNC_FIFO_U5/U4/wptr_sync1_reg[3]
+
+  Ref  DFF        Ref:/WORK/System_TOP/ASYNC_FIFO_U5/U4/wptr_sync_reg[0]
+  Impl DFF        Imp:/WORK/System_TOP/ASYNC_FIFO_U5/U4/wptr_sync_reg[0]
+
+  Ref  DFF        Ref:/WORK/System_TOP/ASYNC_FIFO_U5/U4/wptr_sync_reg[1]
+  Impl DFF        Imp:/WORK/System_TOP/ASYNC_FIFO_U5/U4/wptr_sync_reg[1]
+
+  Ref  DFF        Ref:/WORK/System_TOP/ASYNC_FIFO_U5/U4/wptr_sync_reg[2]
+  Impl DFF        Imp:/WORK/System_TOP/ASYNC_FIFO_U5/U4/wptr_sync_reg[2]
+
+  Ref  DFF        Ref:/WORK/System_TOP/ASYNC_FIFO_U5/U4/wptr_sync_reg[3]
+  Impl DFF        Imp:/WORK/System_TOP/ASYNC_FIFO_U5/U4/wptr_sync_reg[3]
+
+  Ref  DFF        Ref:/WORK/System_TOP/DATA_SYNC_U2/enable_flop_reg
+  Impl DFF        Imp:/WORK/System_TOP/DATA_SYNC_U2/enable_flop_reg
+
+  Ref  DFF        Ref:/WORK/System_TOP/DATA_SYNC_U2/enable_pulse_reg
+  Impl DFF        Imp:/WORK/System_TOP/DATA_SYNC_U2/enable_pulse_reg
+
+  Ref  DFF        Ref:/WORK/System_TOP/DATA_SYNC_U2/stage_reg[0]
+  Impl DFF        Imp:/WORK/System_TOP/DATA_SYNC_U2/stage_reg[0]
+
+  Ref  DFF        Ref:/WORK/System_TOP/DATA_SYNC_U2/stage_reg[1]
+  Impl DFF        Imp:/WORK/System_TOP/DATA_SYNC_U2/stage_reg[1]
+
+  Ref  DFF        Ref:/WORK/System_TOP/DATA_SYNC_U2/sync_bus_reg[0]
+  Impl DFF        Imp:/WORK/System_TOP/DATA_SYNC_U2/sync_bus_reg[0]
+
+  Ref  DFF        Ref:/WORK/System_TOP/DATA_SYNC_U2/sync_bus_reg[1]
+  Impl DFF        Imp:/WORK/System_TOP/DATA_SYNC_U2/sync_bus_reg[1]
+
+  Ref  DFF        Ref:/WORK/System_TOP/DATA_SYNC_U2/sync_bus_reg[2]
+  Impl DFF        Imp:/WORK/System_TOP/DATA_SYNC_U2/sync_bus_reg[2]
+
+  Ref  DFF        Ref:/WORK/System_TOP/DATA_SYNC_U2/sync_bus_reg[3]
+  Impl DFF        Imp:/WORK/System_TOP/DATA_SYNC_U2/sync_bus_reg[3]
+
+  Ref  DFF        Ref:/WORK/System_TOP/DATA_SYNC_U2/sync_bus_reg[4]
+  Impl DFF        Imp:/WORK/System_TOP/DATA_SYNC_U2/sync_bus_reg[4]
+
+  Ref  DFF        Ref:/WORK/System_TOP/DATA_SYNC_U2/sync_bus_reg[5]
+  Impl DFF        Imp:/WORK/System_TOP/DATA_SYNC_U2/sync_bus_reg[5]
+
+  Ref  DFF        Ref:/WORK/System_TOP/DATA_SYNC_U2/sync_bus_reg[6]
+  Impl DFF        Imp:/WORK/System_TOP/DATA_SYNC_U2/sync_bus_reg[6]
+
+  Ref  DFF        Ref:/WORK/System_TOP/DATA_SYNC_U2/sync_bus_reg[7]
+  Impl DFF        Imp:/WORK/System_TOP/DATA_SYNC_U2/sync_bus_reg[7]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/ALU_U1/OUT_VALID_reg
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/ALU_U1/OUT_VALID_reg
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/RegFile_U2/RdData_Valid_reg
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/RegFile_U2/RdData_Valid_reg
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/RegFile_U2/regArr_reg[2][0]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/RegFile_U2/regArr_reg[2][0]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/RegFile_U2/regArr_reg[2][1]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/RegFile_U2/regArr_reg[2][1]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/RegFile_U2/regArr_reg[2][2]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/RegFile_U2/regArr_reg[2][2]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/RegFile_U2/regArr_reg[2][3]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/RegFile_U2/regArr_reg[2][3]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/RegFile_U2/regArr_reg[2][4]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/RegFile_U2/regArr_reg[2][4]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/RegFile_U2/regArr_reg[2][5]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/RegFile_U2/regArr_reg[2][5]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/RegFile_U2/regArr_reg[2][6]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/RegFile_U2/regArr_reg[2][6]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/RegFile_U2/regArr_reg[2][7]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/RegFile_U2/regArr_reg[2][7]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/cur_state_reg[0]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/cur_state_reg[0]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/cur_state_reg[1]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/cur_state_reg[1]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/cur_state_reg[2]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/cur_state_reg[2]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/cur_state_reg[3]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/cur_state_reg[3]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/cur_state_reg[4]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/cur_state_reg[4]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[0]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[0]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[1]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[1]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[2]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[2]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[3]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[3]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[4]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[4]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[5]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[5]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[6]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[6]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[7]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/opA_reg_reg[7]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[0]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[0]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[1]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[1]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[2]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[2]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[3]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[3]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[4]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[4]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[5]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[5]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[6]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[6]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[7]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/opB_reg_reg[7]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/wr_addr_reg_reg[0]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/wr_addr_reg_reg[0]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/wr_addr_reg_reg[1]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/wr_addr_reg_reg[1]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/wr_addr_reg_reg[2]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/wr_addr_reg_reg[2]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/wr_addr_reg_reg[3]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/wr_addr_reg_reg[3]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[0]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[0]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[1]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[1]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[2]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[2]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[3]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[3]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[4]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[4]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[5]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[5]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[6]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[6]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[7]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_1_TOP_U0/SYS_CTRL_U3/wr_data_reg_reg[7]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/PULSE_GEN_U3/LVL_SIG_OLD_reg
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/PULSE_GEN_U3/LVL_SIG_OLD_reg
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/PULSE_GEN_U3/PULSE_SIG_reg
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/PULSE_GEN_U3/PULSE_SIG_reg
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U0/U1/cur_state_reg[0]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U0/U1/cur_state_reg[0]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U0/U1/cur_state_reg[1]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U0/U1/cur_state_reg[1]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U0/U1/cur_state_reg[2]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U0/U1/cur_state_reg[2]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U0/U2/Counter_reg[0]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U0/U2/Counter_reg[0]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U0/U2/Counter_reg[1]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U0/U2/Counter_reg[1]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U0/U2/Counter_reg[2]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U0/U2/Counter_reg[2]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U0/U2/Counter_reg[3]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U0/U2/Counter_reg[3]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U0/U2/ser_done_reg
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U0/U2/ser_done_reg
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U1/cur_state_reg[0]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U1/cur_state_reg[0]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U1/cur_state_reg[1]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U1/cur_state_reg[1]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U1/cur_state_reg[2]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U1/cur_state_reg[2]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U2/sample_1_reg
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U2/sample_1_reg
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U2/sample_2_reg
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U2/sample_2_reg
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U2/sample_3_reg
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U2/sample_3_reg
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U2/sampled_data_reg
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U2/sampled_data_reg
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/Counter_done_reg
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/Counter_done_reg
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/Counter_reg[1]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/Counter_reg[1]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/Counter_reg[2]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/Counter_reg[2]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/Counter_reg[3]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/Counter_reg[3]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/DATA_reg[0]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/DATA_reg[0]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/DATA_reg[1]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/DATA_reg[1]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/DATA_reg[2]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/DATA_reg[2]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/DATA_reg[3]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/DATA_reg[3]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/DATA_reg[4]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/DATA_reg[4]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/DATA_reg[5]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/DATA_reg[5]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/DATA_reg[6]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/DATA_reg[6]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/DATA_reg[7]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/DATA_reg[7]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/P_DATA_reg[0]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/P_DATA_reg[0]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/P_DATA_reg[1]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/P_DATA_reg[1]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/P_DATA_reg[2]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/P_DATA_reg[2]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/P_DATA_reg[3]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/P_DATA_reg[3]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/P_DATA_reg[4]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/P_DATA_reg[4]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/P_DATA_reg[5]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/P_DATA_reg[5]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/P_DATA_reg[6]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/P_DATA_reg[6]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/P_DATA_reg[7]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U3/P_DATA_reg[7]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U4/bit_cnt_reg[0]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U4/bit_cnt_reg[0]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U4/bit_cnt_reg[1]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U4/bit_cnt_reg[1]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U4/bit_cnt_reg[2]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U4/bit_cnt_reg[2]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U4/bit_cnt_reg[3]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U4/bit_cnt_reg[3]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U4/edge_cnt_done_reg
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U4/edge_cnt_done_reg
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U4/edge_cnt_reg[0]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U4/edge_cnt_reg[0]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U4/edge_cnt_reg[1]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U4/edge_cnt_reg[1]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U4/edge_cnt_reg[2]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U4/edge_cnt_reg[2]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U4/edge_cnt_reg[3]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U4/edge_cnt_reg[3]
+
+  Ref  DFF        Ref:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U4/edge_cnt_reg[4]
+  Impl DFF        Imp:/WORK/System_TOP/Domain_2_TOP_U1/UART_U0/U1/U4/edge_cnt_reg[4]
+
+  Ref  Port       Ref:/WORK/System_TOP/framing_error
+  Impl Port       Imp:/WORK/System_TOP/framing_error
+
+  Ref  Port       Ref:/WORK/System_TOP/parity_error
+  Impl Port       Imp:/WORK/System_TOP/parity_error
+
+ [BBNet: multiply-driven net
+  BBPin: black-box pin
+  Cut:   cut-point
+  DFF:   non-constant DFF register
+  DFF0:  constant 0 DFF register
+  DFF1:  constant 1 DFF register
+  DFFX:  constant X DFF register
+  DFF0X: constrained 0X DFF register
+  DFF1X: constrained 1X DFF register
+  LAT:   non-constant latch register
+  LAT0:  constant 0 latch register
+  LAT1:  constant 1 latch register
+  LATX:  constant X latch register
+  LAT0X: constrained 0X latch register
+  LAT1X: constrained 1X latch register
+  LATCG: clock-gating latch register
+  TLA:   transparent latch register
+  TLA0X: transparent constrained 0X latch register
+  TLA1X: transparent constrained 1X latch register
+  Loop:  cycle break point
+  Port:  primary (top-level) port
+  Und:   undriven signal cut-point
+  Unk:   unknown signal cut-point]
+
+1
