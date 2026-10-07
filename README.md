@@ -10,7 +10,7 @@ The design demonstrates key digital IC design concepts including RTL development
 
 ## Features
 
-### Communication Subsystem
+### Communication
 - UART Transmitter (TX)
 - UART Receiver (RX)
 - Configurable Parity Generation
@@ -18,7 +18,7 @@ The design demonstrates key digital IC design concepts including RTL development
 - Framing Error Detection
 - Start/Stop Bit Validation
 
-### Processing Subsystem
+### Processing
 - Configurable Arithmetic Logic Unit (ALU)
 - Register File
 - System Controller FSM
@@ -44,166 +44,26 @@ The design demonstrates key digital IC design concepts including RTL development
 - Reduced Dynamic Switching Activity
 
 ### Design-for-Testability
+- Scan Insertion
 - Multiple Scan Chains
-- Scan Enable (SE)
-- Scan Input (SI)
-- Scan Output (SO)
 - Test Mode Support
-- Dedicated Scan Clock
+- Scan Enable Control
+- Scan Clock Support
 - Scan Reset Support
 
 ---
 
-## System Architecture
+## Top-Level Architecture
 
 ```text
-                    +----------------+
-                    |    UART RX     |
-                    +--------+-------+
-                             |
-                             v
-                    +----------------+
-                    |  System CTRL   |
-                    +--------+-------+
-                             |
-        +--------------------+-------------------+
-        |                                        |
-        v                                        v
-+---------------+                     +----------------+
-| Register File |                     |      ALU       |
-+-------+-------+                     +--------+-------+
-        |                                      |
-        +---------------+----------------------+
-                        |
-                        v
-                  +------------+
-                  |  UART TX   |
-                  +------------+
-```
-
----
-
-## ASIC Design Flow
-
-1. RTL Design and Development
-2. Functional Verification
-3. SpyGlass Lint Analysis
-4. CDC Verification
-5. Logic Synthesis (Design Compiler)
-6. Static Timing Analysis (STA)
-7. DFT Scan Insertion
-8. Formal Equivalence Checking (Formality)
-
----
-
-## Tools Used
-
-- Verilog HDL
-- ModelSim
-- Vivado
-- Synopsys Design Compiler
-- Synopsys SpyGlass
-- Synopsys Formality
-- TCL
-- Linux
-
----
-
-## Verification
-
-The design was verified through:
-
-- Self-Checking Testbenches
-- Functional Simulation
-- Lint Analysis
-- CDC Verification
-- Synthesis Verification
-- Formal Equivalence Checking
-
-Verification covers UART communication, ALU functionality, FIFO operation, clock-domain crossings, reset synchronization, and scan architecture integration.
-
----
-
-## DFT Architecture
-
-The project includes a scan-based DFT implementation featuring:
-
-- Multiple Scan Chains
-- Scan Input (SI)
-- Scan Output (SO)
-- Scan Enable (SE)
-- Dedicated Scan Clock
-- Scan Reset
-- Test Mode Operation
-
----
-
-## Repository Structure
-
-```text
-RTL/
-├── ALU.v
-├── ASYNC_FIFO.v
-├── CLKDiv.v
-├── DATA_SYNC.v
-├── DF_SYNC.v
-├── RegFile.v
-├── SYS_CTRL.v
-├── UART_TOP.v
-├── System_TOP.v
-
-TB/
-├── System_TOP_tb.v
-
-CDC/
-DFT/
-Synthesis/
-STA/
-Formality/
-Docs/
-```
-
----
-
-## Skills Demonstrated
-
-- RTL Design
-- Verilog HDL
-- FSM Design
-- UART Protocol Implementation
-- Clock Domain Crossing (CDC)
-- Asynchronous FIFO Design
-- Clock Gating
-- ASIC Synthesis
-- Static Timing Analysis
-- Design-for-Testability (DFT)
-- Formal Verification
-- CDC Verification
-- SpyGlass Lint Analysis
-
----
-
-## Future Enhancements
-
-- SystemVerilog-Based Verification
-- UVM Testbench Development
-- Coverage-Driven Verification
-- Power Analysis
-- Physical Design Flow
-- RISC-V Integration
-
----
-
-## Author
-
-**Hazem Abdelnaby Mohamed**
-
-Faculty of Engineering, Ain Shams University
-
-Areas of Interest:
-- Digital IC Design
-- RTL Design
-- FPGA Development
-- ASIC Design Flow
-- Verification
-- VLSI Systems
+UART RX
+   │
+   ▼
+System Controller
+   │
+   ├────────► Register File
+   │
+   └────────► ALU
+                  │
+                  ▼
+              UART TX
